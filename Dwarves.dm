@@ -16,6 +16,25 @@
 #norepel
 #end
 
+// Arbalest
+#newweapon 802
+#name "Steel Arbalest"
+#rcost 12
+#sound 13
+#twohanded
+#nratt -3
+#dmg 12
+#range 45
+#ammo 8
+#attk 5
+#pierce
+#armorpiercing
+#bowstr
+#ironweapon
+#flyspr 109 0.6
+#end
+
+
 // Kilt
 #newarmor 301
 #name "Thick Wool Skirt"
@@ -34,7 +53,6 @@
 #prot 18
 #enc 3
 #def -2
-#magicarmor
 #end
 
 // Earth-Blood Full Plate
@@ -45,7 +63,6 @@
 #prot 26
 #enc 5
 #def -4
-#magicarmor
 #end
 
 // Mithril Shirt
@@ -55,7 +72,6 @@
 #prot 15
 #enc 5
 #def 0
-#magicarmor
 #end
 
 // Mithril Full Shield
@@ -66,7 +82,6 @@
 #prot 25
 #enc 5
 #def 10
-#magicarmor
 #end
 
 // Mithril Full Helm
@@ -76,7 +91,15 @@
 #rcost 25
 #prot 30
 #enc 2
-#magicarmor
+#end
+
+#newarmor 307
+#name "Mithril Pavise"
+#type 4
+#rcost 25
+#prot 18
+#enc 4
+#def 6
 #end
 
 // Redbeard Chief
@@ -101,7 +124,6 @@
 #eyes 2
 
 #humanoid
-//#nomovepen
 #maxage 150
 #heal
 #end
@@ -146,16 +168,42 @@
 #undisciplined
 #end
 
-// Redbeard Temp Infantry
-#newmonster 3504
-#copystats 3501
+// Blackbeard Captain
+#newmonster 3511
+#name "Blackbeard Captain"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Mauler_0.tga"
+#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#drawsize 10
+#hp 14
+#str 12
+#att 10
+#def 9
+#prec 10
+#prot 3
+#size 1
+#mr 14
+#mor 13
+#enc 4
+#mapmove 8
+#ap 8
+#eyes 2
+#humanoid
+#nomovepen
+#supplybonus -1
+#maxage 150
+#end
+
+// Blackbeard Infantry
+#newmonster 3512
+#copystats 3511
 #name "Blackbeard Infantry"
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Berserker_0.tga"
 #spr2 "Dwarves/Redbeard_Berserker_1.tga"
 #rcost 1
-#gcost 8
-#rpcost 18
+#gcost 10
+#rpcost 22
 
 #weapon 801
 #armor 306
@@ -164,6 +212,23 @@
 
 #end
 
+// Blackbeard Arbalest
+#newmonster 3513
+#copystats 3511
+#name "Blackbeard Arbalest"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Berserker_0.tga"
+#spr2 "Dwarves/Redbeard_Berserker_1.tga"
+#rcost 1
+#gcost 9
+#rpcost 20
+
+#weapon 802
+#armor 306
+#armor 303
+#armor 307
+
+#end
 
 // Nation
 #newnation
@@ -185,13 +250,14 @@
 
 #addrecunit 3502
 #addrecunit 3503
-#addrecunit 3504
+#addrecunit 3512
+#addrecunit 3513
 #addreccom 3501
 
-#defcom1 3501
+#defcom1 3511
 #defcom2 3501
 #defunit1 3502
-#defunit2 3503
+#defunit2 3512
 
 #wallunit 3502
 
