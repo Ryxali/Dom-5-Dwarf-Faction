@@ -106,8 +106,8 @@
 #newmonster 3501
 #name "Redbeard Chief"
 #descr "Angery"
-#spr1 "Dwarves/Redbeard_Mauler_0.tga"
-#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#spr1 "Dwarves/Redbeard_Chief_0.tga"
+#spr2 "Dwarves/Redbeard_Chief_1.tga"
 #drawsize 20
 #hp 15
 #str 12
@@ -199,8 +199,8 @@
 #copystats 3511
 #name "Blackbeard Infantry"
 #descr "Angery"
-#spr1 "Dwarves/Redbeard_Berserker_0.tga"
-#spr2 "Dwarves/Redbeard_Berserker_1.tga"
+#spr1 "Dwarves/Redbeard_Brawler_0.tga"
+#spr2 "Dwarves/Redbeard_Brawler_1.tga"
 #rcost 1
 #gcost 10
 #rpcost 22
@@ -217,8 +217,8 @@
 #copystats 3511
 #name "Blackbeard Arbalest"
 #descr "Angery"
-#spr1 "Dwarves/Redbeard_Berserker_0.tga"
-#spr2 "Dwarves/Redbeard_Berserker_1.tga"
+#spr1 "Dwarves/Redbeard_Shaman_0.tga"
+#spr2 "Dwarves/Redbeard_Shaman_1.tga"
 #rcost 1
 #gcost 9
 #rpcost 20
