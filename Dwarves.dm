@@ -7,7 +7,7 @@
 #name "Battle Hammer"
 #len 1
 #sound 10
-#dmg 8
+#dmg 6
 #att 1
 #def 0
 #rcost 3
@@ -61,7 +61,7 @@
 #name "Puresteel Full Plate"
 #type 5
 #rcost 30
-#prot 26
+#prot 24
 #enc 4
 #def -4
 #end
@@ -80,7 +80,7 @@
 #name "Puresteel Full Shield"
 #type 4
 #rcost 30
-#prot 25
+#prot 20
 #enc 2
 #def 10
 #end
@@ -90,7 +90,7 @@
 #name "Puresteel Full Helm"
 #type 6
 #rcost 25
-#prot 30
+#prot 26
 #enc 0
 #end
 
