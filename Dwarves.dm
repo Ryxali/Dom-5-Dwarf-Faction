@@ -45,9 +45,9 @@
 #rcost 1
 #end
 
-// Mithril Plate Cuirass
+// Puresteel Plate Cuirass
 #newarmor 302
-#name "Mithril Plate Cuirass"
+#name "Puresteel Plate Cuirass"
 #type 5
 #rcost 25
 #prot 18
@@ -55,50 +55,50 @@
 #def -2
 #end
 
-// Earth-Blood Full Plate
+// Puresteel Full Plate
 #newarmor 303
-#name "Mithril Full Plate"
+#name "Puresteel Full Plate"
 #type 5
 #rcost 30
 #prot 26
-#enc 5
+#enc 4
 #def -4
 #end
 
-// Mithril Shirt
+// Puresteel Shirt
 #newarmor 304
-#name "Mithril Shirt"
+#name "Puresteel Shirt"
 #type 5
 #prot 15
 #enc 5
 #def 0
 #end
 
-// Mithril Full Shield
+// Puresteel Full Shield
 #newarmor 305
-#name "Mithril Full Shield"
+#name "Puresteel Full Shield"
 #type 4
 #rcost 30
 #prot 25
-#enc 5
+#enc 2
 #def 10
 #end
 
-// Mithril Full Helm
+// Puresteel Full Helm
 #newarmor 306
-#name "Mithril Full Helm"
+#name "Puresteel Full Helm"
 #type 6
 #rcost 25
 #prot 30
-#enc 2
+#enc 0
 #end
 
 #newarmor 307
-#name "Mithril Pavise"
+#name "Puresteel Pavise"
 #type 4
 #rcost 25
 #prot 18
-#enc 4
+#enc 2
 #def 6
 #end
 
@@ -109,7 +109,7 @@
 #spr1 "Dwarves/Redbeard_Chief_0.tga"
 #spr2 "Dwarves/Redbeard_Chief_1.tga"
 #drawsize 20
-#hp 15
+#hp 13
 #str 12
 #att 10
 #def 9
@@ -119,13 +119,63 @@
 #mr 14
 #mor 13
 #enc 4
-#mapmove 8
-#ap 8
+#mapmove 10
+#ap 10
 #eyes 2
 
 #humanoid
 #maxage 150
-#heal
+#woundfend 1
+#berserk 3
+
+#gcost 10000
+#rpcost 1
+
+#weapon 14
+#armor 801
+#end
+
+// Redbeard Brawler
+#newmonster 3504
+#copystats 3501
+#name "Redbeard Brawler"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Brawler_0.tga"
+#spr2 "Dwarves/Redbeard_Brawler_1.tga"
+#clearweapons
+#cleararmor
+
+#weapon 92
+#weapon 92
+#weapon 20
+#armor 301
+
+#poorleader
+#inspirational 1
+#end
+
+// Redbeard Shaman
+#newmonster 3505
+#copystats 3501
+#name "Redbeard Shaman"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Shaman_0.tga"
+#spr2 "Dwarves/Redbeard_Shaman_1.tga"
+
+#clearweapons
+#cleararmor
+
+#rpcost 2
+
+#armor 301
+
+#poorleader
+
+#magicskill 3 1
+#custommagic 1152 100
+#custommagic 1152 10
+#researchbonus -5
+
 #end
 
 // Redbeard Warrior (Maul)
@@ -135,6 +185,8 @@
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#clearweapons
+#cleararmor
 
 #rcost 1
 #gcost 8
@@ -143,7 +195,6 @@
 #weapon 14
 #armor 301
 
-#berserk 3
 #undisciplined
 #end
 
@@ -154,16 +205,16 @@
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Berserker_0.tga"
 #spr2 "Dwarves/Redbeard_Berserker_1.tga"
+#clearweapons
+#cleararmor
 #rcost 1
 #gcost 8
 #rpcost 18
 
-#nomovepen
 #weapon 801
 #weapon 801
 #armor 301
 
-#berserk 3
 #ambidextrous 2
 #undisciplined
 #end
@@ -175,7 +226,7 @@
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #drawsize 10
-#hp 14
+#hp 12
 #str 12
 #att 10
 #def 9
@@ -186,7 +237,7 @@
 #mor 13
 #enc 4
 #mapmove 8
-#ap 8
+#ap 10
 #eyes 2
 #humanoid
 #nomovepen
@@ -224,6 +275,7 @@
 #rpcost 20
 
 #weapon 802
+#weapon 12
 #armor 306
 #armor 303
 #armor 307
@@ -248,11 +300,19 @@
 #startunittype2 3503
 #startunitnbrs2 20
 
-#addrecunit 3502
-#addrecunit 3503
+// Redbeards
+#addforeignunit 3502
+#addforeignunit 3503
+#addforeigncom 3501
+#addforeigncom 3504
+#addforeigncom 3505
+
 #addrecunit 3512
 #addrecunit 3513
-#addreccom 3501
+//#mountainrec 3502
+//#mountainrec 3503
+//#mountaincom 3504
+//#mountaincom 3501
 
 #defcom1 3511
 #defcom2 3501
