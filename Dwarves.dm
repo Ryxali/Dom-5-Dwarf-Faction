@@ -2,7 +2,7 @@
 #description "dorfs"
 #version 1.0
 
-// War Hammer
+-- War Hammer
 #newweapon 801
 #name "Battle Hammer"
 #len 1
@@ -14,9 +14,10 @@
 #blunt
 #ironweapon
 #norepel
+#nratt -2
 #end
 
-// Arbalest
+-- Arbalest
 #newweapon 802
 #name "Steel Arbalest"
 #rcost 12
@@ -35,7 +36,7 @@
 #end
 
 
-// Kilt
+-- Kilt
 #newarmor 301
 #name "Thick Wool Skirt"
 #type = 5
@@ -45,7 +46,7 @@
 #rcost 1
 #end
 
-// Puresteel Plate Cuirass
+-- Puresteel Plate Cuirass
 #newarmor 302
 #name "Puresteel Plate Cuirass"
 #type 5
@@ -55,7 +56,7 @@
 #def -2
 #end
 
-// Puresteel Full Plate
+-- Puresteel Full Plate
 #newarmor 303
 #name "Puresteel Full Plate"
 #type 5
@@ -65,7 +66,7 @@
 #def -4
 #end
 
-// Puresteel Shirt
+-- Puresteel Shirt
 #newarmor 304
 #name "Puresteel Shirt"
 #type 5
@@ -74,7 +75,7 @@
 #def 0
 #end
 
-// Puresteel Full Shield
+-- Puresteel Full Shield
 #newarmor 305
 #name "Puresteel Full Shield"
 #type 4
@@ -84,7 +85,7 @@
 #def 10
 #end
 
-// Puresteel Full Helm
+-- Puresteel Full Helm
 #newarmor 306
 #name "Puresteel Full Helm"
 #type 6
@@ -102,16 +103,16 @@
 #def 6
 #end
 
-// Redbeard Chief
+-- Redbeard Chief
 #newmonster 3501
 #name "Redbeard Chief"
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Chief_0.tga"
 #spr2 "Dwarves/Redbeard_Chief_1.tga"
 #drawsize 20
-#hp 13
+#hp 12
 #str 12
-#att 10
+#att 9
 #def 9
 #prec 10
 #prot 3
@@ -132,10 +133,11 @@
 #rpcost 1
 
 #weapon 14
-#armor 801
+#armor 301
+#armor 148
 #end
 
-// Redbeard Brawler
+-- Redbeard Brawler
 #newmonster 3504
 #copystats 3501
 #name "Redbeard Brawler"
@@ -154,7 +156,7 @@
 #inspirational 1
 #end
 
-// Redbeard Shaman
+-- Redbeard Shaman
 #newmonster 3505
 #copystats 3501
 #name "Redbeard Shaman"
@@ -168,6 +170,7 @@
 #rpcost 2
 
 #armor 301
+#armor 148
 
 #poorleader
 
@@ -178,7 +181,7 @@
 
 #end
 
-// Redbeard Warrior (Maul)
+-- Redbeard Warrior (Maul)
 #newmonster 3502
 #copystats 3501
 #name "Redbeard Warrior"
@@ -198,7 +201,7 @@
 #undisciplined
 #end
 
-// Redbeard Warrior (2 hammers)
+-- Redbeard Warrior (2 hammers)
 #newmonster 3503
 #copystats 3501
 #name "Redbeard Warrior"
@@ -219,17 +222,17 @@
 #undisciplined
 #end
 
-// Blackbeard Captain
+-- Blackbeard Captain
 #newmonster 3511
 #name "Blackbeard Captain"
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #drawsize 10
-#hp 12
+#hp 11
 #str 12
-#att 10
-#def 9
+#att 8
+#def 8
 #prec 10
 #prot 3
 #size 1
@@ -243,9 +246,56 @@
 #nomovepen
 #supplybonus -1
 #maxage 150
+
+
+#rpcost 2
+#gcost 10000
 #end
 
-// Blackbeard Infantry
+-- Blackbeard Artisan
+#newmonster 3514
+#copystats 3511
+#name "Blackbeard Artisan"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Mauler_0.tga"
+#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#gcost 10010
+
+#weapon 115
+
+#poorleader
+
+#magicskill 3 2
+#custommagic 896 100
+#researchbonus 1
+#mastersmith 1
+#resources 5
+#homesick 10
+#end
+
+-- Blackbeard Lord Commander
+#newmonster 3515
+#copystats 3511
+#name "Blackbeard Lord Commander"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Brawler_0.tga"
+#spr2 "Dwarves/Redbeard_Brawler_1.tga"
+#rcost 1
+#gcost 10020
+#rpcost 2
+#size 2
+#mounted
+#enc 6
+
+#weapon 801
+#armor 306
+#armor 303
+
+#expertleader
+
+#end
+
+-- Blackbeard Infantry
 #newmonster 3512
 #copystats 3511
 #name "Blackbeard Infantry"
@@ -253,7 +303,7 @@
 #spr1 "Dwarves/Redbeard_Brawler_0.tga"
 #spr2 "Dwarves/Redbeard_Brawler_1.tga"
 #rcost 1
-#gcost 10
+#gcost 11
 #rpcost 22
 
 #weapon 801
@@ -263,7 +313,7 @@
 
 #end
 
-// Blackbeard Arbalest
+-- Blackbeard Arbalest
 #newmonster 3513
 #copystats 3511
 #name "Blackbeard Arbalest"
@@ -271,7 +321,7 @@
 #spr1 "Dwarves/Redbeard_Shaman_0.tga"
 #spr2 "Dwarves/Redbeard_Shaman_1.tga"
 #rcost 1
-#gcost 9
+#gcost 10
 #rpcost 20
 
 #weapon 802
@@ -282,9 +332,9 @@
 
 #end
 
-// Nation
+-- Nation
 #newnation
-#name "Dwarves"
+#name "Dûn"
 #epithet "Clans"
 #era 2
 #descr "Dwrwrwr"
@@ -295,12 +345,12 @@
 #startsite "Tar Pits"
 
 #startcom 3501
-#startunittype1 3502
-#startunitnbrs1 20
-#startunittype2 3503
-#startunitnbrs2 20
+#startunittype1 3512
+#startunitnbrs1 10
+#startunittype2 3513
+#startunitnbrs2 8
 
-// Redbeards
+-- Redbeards
 #addforeignunit 3502
 #addforeignunit 3503
 #addforeigncom 3501
@@ -309,17 +359,23 @@
 
 #addrecunit 3512
 #addrecunit 3513
-//#mountainrec 3502
-//#mountainrec 3503
-//#mountaincom 3504
-//#mountaincom 3501
+#addreccom 3514
+#addreccom 3515
+---#mountainrec 3502
+--#mountainrec 3503
+--#mountaincom 3504
+--#mountaincom 3501
 
 #defcom1 3511
-#defcom2 3501
-#defunit1 3502
-#defunit2 3512
+#defcom2 3515
+#defunit1 3512
+#defunit2 3513
+#defmult1 20
+#defmult2 30
 
-#wallunit 3502
+#wallcom 3511
+#wallunit 3513
+#wallmult 20
 
 #homerealm 1
 #fortera 3
