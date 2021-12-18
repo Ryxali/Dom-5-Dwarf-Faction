@@ -27,7 +27,7 @@
 #dmg 12
 #range 45
 #ammo 8
-#attk 5
+#att 5
 #pierce
 #armorpiercing
 #bowstr
@@ -35,6 +35,24 @@
 #flyspr 109 0.6
 #end
 
+-- Ballista
+#newweapon 803
+#name "Ballista"
+#rcost 50
+#sound 13
+#nratt -3
+#dmg 25
+#aoe 1
+#ammo 12
+#att 3
+#range 50
+#pierce
+#armorpiercing
+#nostr
+#ironweapon
+#flyspr 110 0.8
+#explspr 10002
+#end
 
 -- Kilt
 #newarmor 301
@@ -332,6 +350,38 @@
 
 #end
 
+-- Blackbeard Ballista
+#newmonster 3516
+#name "Blackbeard Ballista"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Mauler_0.tga"
+#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#drawsize 10
+#hp 22
+#str 12
+#att 8
+#def 0
+#prec 10
+#prot 18
+#size 4
+#mr 14
+#mor 13
+#enc 4
+#mapmove 6
+#ap 6
+#miscshape
+#immobile
+#maxage 150
+
+#weapon 803
+
+#rpcost 44
+#rcost 40
+#gcost 42
+
+#siegebonus 50
+#end
+
 -- Nation
 #newnation
 #name "Dûn"
@@ -359,6 +409,7 @@
 
 #addrecunit 3512
 #addrecunit 3513
+#addrecunit 3516
 #addreccom 3514
 #addreccom 3515
 ---#mountainrec 3502
