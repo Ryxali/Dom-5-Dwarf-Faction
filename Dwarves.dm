@@ -88,8 +88,9 @@
 #newarmor 304
 #name "Puresteel Shirt"
 #type 5
+#rcost 15
 #prot 15
-#enc 5
+#enc 1
 #def 0
 #end
 
@@ -112,6 +113,7 @@
 #enc 0
 #end
 
+-- Puresteel Pavise
 #newarmor 307
 #name "Puresteel Pavise"
 #type 4
@@ -119,6 +121,15 @@
 #prot 18
 #enc 2
 #def 6
+#end
+
+-- Puresteel Coif
+#newarmor 308
+#name "Puresteel Coif"
+#type 6
+#rcost 12
+#prot 12
+#enc 0
 #end
 
 -- Redbeard Chief
@@ -278,13 +289,13 @@
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
-#gcost 10010
+#gcost 10030
 
 #weapon 115
 
 #poorleader
 
-#magicskill 3 2
+#magicskill 3 1
 #custommagic 896 100
 #researchbonus 1
 #mastersmith 1
@@ -312,6 +323,29 @@
 
 #expertleader
 
+#end
+
+-- Blackbeard Master Artisan
+#newmonster 3516
+#copystats 3511
+#name "Blackbeard Master Artisan"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Mauler_0.tga"
+#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#gcost 10040
+#holy
+
+#weapon 115
+
+#poorleader
+
+#magicskill 3 2
+#custommagic 896 100
+#custommagic 896 10
+#researchbonus 1
+#mastersmith 1
+#resources 10
+#homesick 10
 #end
 
 -- Blackbeard Infantry
@@ -351,6 +385,7 @@
 
 #end
 
+<<<<<<< Updated upstream
 -- Blackbeard Ballista
 #newmonster 3516
 #name "Blackbeard Ballista"
@@ -421,6 +456,121 @@
 #mon 3502
 #mon 3503
 #com 3501
+=======
+-- Whitebeard Sage
+#newmonster 3521
+#name "Whitebeard Sage"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Mauler_0.tga"
+#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#hp 10
+#str 10
+#att 8
+#def 8
+#prec 10
+#prot 3
+#size 1
+#mr 14
+#mor 13
+#enc 4
+#mapmove 8
+#ap 10
+#eyes 2
+#humanoid
+#maxage 150
+
+
+#rpcost 2
+#gcost 10020
+
+#magicskill 3 1
+#custommagic 768 100
+#custommagic 768 10
+#researchbonus 4
+
+#end
+
+-- Whitebeard Kinsman
+#newmonster 3522
+#copystats 3521
+#clearspec
+#clearmagic
+#name "Whitebeard Kinsman"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Shaman_0.tga"
+#spr2 "Dwarves/Redbeard_Shaman_1.tga"
+#rcost 1
+#gcost 10
+#rpcost 20
+
+#weapon 12
+#armor 304
+#armor 308
+
+#bodyguard 2
+#end
+
+-- Dûn
+#newmonster 3531
+#name "Dûn"
+#descr "Sacred beardless Dwarf"
+#spr1 "Dwarves/Redbeard_Mauler_0.tga"
+#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#hp 10
+#str 10
+#att 8
+#def 8
+#prec 10
+#prot 3
+#size 1
+#mr 14
+#mor 13
+#enc 4
+#mapmove 8
+#ap 10
+#eyes 2
+#humanoid
+#nomovepen
+#maxage 150
+#holy
+
+#end
+
+-- Smith Elder
+#newmonster 3531
+#name "Smith Elder"
+#descr "Angery"
+#spr1 "Dwarves/Redbeard_Mauler_0.tga"
+#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#hp 10
+#str 10
+#att 8
+#def 8
+#prec 10
+#prot 3
+#size 1
+#mr 14
+#mor 13
+#enc 4
+#mapmove 8
+#ap 10
+#eyes 2
+#humanoid
+#nomovepen
+#maxage 150
+#holy
+
+#slowrec
+#rpcost 4
+#homesick 20
+#gcost 10050
+#mastersmith 2
+
+#magicskill 3 2
+#custommagic 1920 100
+#custommagic 1920 100
+
+>>>>>>> Stashed changes
 #end
 
 -- Nation
@@ -450,15 +600,23 @@
 #addforeigncom 3504
 #addforeigncom 3505
 
+-- Blackbeards
 #addrecunit 3512
 #addrecunit 3513
 #addrecunit 3516
 #addreccom 3514
 #addreccom 3515
----#mountainrec 3502
+#addreccom 3516
+
+-- Misc
+#addreccom 3531
+#addrecunit 3531
+
+-- Whitebeards
+#mountaincom 3521
+#mountainrec 3522
 --#mountainrec 3503
 --#mountaincom 3504
---#mountaincom 3501
 
 #defcom1 3511
 #defcom2 3515
