@@ -298,7 +298,6 @@
 
 #magicskill 3 1
 #custommagic 1536 100
-#researchbonus 1
 #mastersmith 1
 #resources 5
 #homesick 10
@@ -344,7 +343,6 @@
 #magicskill 3 2
 #custommagic 1536 100
 #custommagic 1920 10
-#researchbonus 1
 #mastersmith 1
 #resources 10
 #homesick 10
