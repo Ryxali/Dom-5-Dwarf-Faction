@@ -561,6 +561,7 @@
 #gems 0 1
 #res 50
 #homecom 3531
+#path 0
 #end
 
 #newsite
@@ -569,6 +570,7 @@
 #wallunit 3516
 #wallmult 2
 #supply 100
+#path 8
 #end
 
 #newsite
@@ -577,6 +579,7 @@
 #gems 1 1
 #gems 2 1
 #homecom 3521
+#path 8
 #end
 
 #newsite
@@ -584,6 +587,7 @@
 #rarity 5
 #incscale 0
 #homecom 3505
+#path 8
 #end
 
 #newsite
