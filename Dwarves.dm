@@ -154,7 +154,7 @@
 #eyes 2
 
 #humanoid
-#maxage 150
+#maxage 250
 #woundfend 1
 #berserk 3
 
@@ -275,7 +275,7 @@
 #humanoid
 #nomovepen
 #supplybonus -1
-#maxage 150
+#maxage 250
 
 
 #rpcost 2
@@ -346,6 +346,7 @@
 #mastersmith 1
 #resources 10
 #homesick 10
+#startage 190
 #end
 
 -- Blackbeard Infantry
@@ -406,7 +407,7 @@
 #ap 6
 #miscshape
 #immobile
-#maxage 150
+#maxage 250
 
 #weapon 803
 
@@ -438,7 +439,7 @@
 #ap 10
 #eyes 2
 #humanoid
-#maxage 150
+#maxage 250
 
 
 #rpcost 2
@@ -448,6 +449,7 @@
 #custommagic 768 100
 #custommagic 768 10
 #researchbonus 4
+#startage 195
 
 #end
 
@@ -493,7 +495,7 @@
 #eyes 2
 #humanoid
 #nomovepen
-#maxage 150
+#maxage 250
 #holy
 
 #end
@@ -519,7 +521,7 @@
 #eyes 2
 #humanoid
 #nomovepen
-#maxage 150
+#maxage 250
 #holy
 
 #weapon 115
@@ -530,6 +532,7 @@
 #homesick 20
 #gcost 10050
 #mastersmith 2
+#startage 280
 
 #magicskill 3 2
 #custommagic 1920 100
