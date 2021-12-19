@@ -383,6 +383,46 @@
 #siegebonus 25
 #end
 
+-- Sites
+#newsite
+#name "Blackforge"
+#rarity 5
+#gems 3 2
+#gems 0 1
+#res 50
+#end
+
+#newsite
+#name "Puresteel Gates of Dûn"
+#rarity 5
+#wallunit 3516 8
+#wallmult 20
+#supply 100
+#end
+
+#newsite
+#name "Records of Dwarfkind"
+#rarity 5
+#gems 1 1
+#gems 2 1
+#end
+
+#newsite
+#name "Dûn Moot"
+#rarity 5
+-- Rec diplomats?
+#end
+
+#newsite
+#name "Redbeard Clan"
+#rarity 1
+#level 0
+#decunrest -3
+#mon 3502
+#mon 3503
+#com 3501
+#end
+
 -- Nation
 #newnation
 #name "Dûn"
@@ -393,7 +433,9 @@
 #color 0.5 0.4 0.5
 #secondarycolor 0.8 0.3 0.4
 
-#startsite "Tar Pits"
+#startsite "Blackforge"
+#startsite "Puresteel Gates of Dûn"
+#startsite "Records of Dwarfkind"
 
 #startcom 3501
 #startunittype1 3512
