@@ -395,8 +395,8 @@
 #newsite
 #name "Puresteel Gates of Dûn"
 #rarity 5
-#wallunit 3516 8
-#wallmult 20
+#wallunit 3516
+#wallmult 2
 #supply 100
 #end
 
@@ -467,9 +467,10 @@
 #defmult1 20
 #defmult2 30
 
-#wallcom 3511
+#wallcom 3515
+#wallcom 3515
 #wallunit 3513
-#wallmult 20
+#wallmult 15
 
 #homerealm 1
 #fortera 3
