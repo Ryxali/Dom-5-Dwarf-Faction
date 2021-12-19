@@ -292,6 +292,7 @@
 #gcost 10030
 
 #weapon 115
+#armor 304
 
 #poorleader
 
@@ -336,6 +337,7 @@
 #holy
 
 #weapon 115
+#armor 304
 
 #poorleader
 
@@ -385,9 +387,8 @@
 
 #end
 
-<<<<<<< Updated upstream
 -- Blackbeard Ballista
-#newmonster 3516
+#newmonster 3517
 #name "Blackbeard Ballista"
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
@@ -418,45 +419,7 @@
 #siegebonus 25
 #end
 
--- Sites
-#newsite
-#name "Blackforge"
-#rarity 5
-#gems 3 2
-#gems 0 1
-#res 50
-#end
 
-#newsite
-#name "Puresteel Gates of Dûn"
-#rarity 5
-#wallunit 3516
-#wallmult 2
-#supply 100
-#end
-
-#newsite
-#name "Records of Dwarfkind"
-#rarity 5
-#gems 1 1
-#gems 2 1
-#end
-
-#newsite
-#name "Dûn Moot"
-#rarity 5
--- Rec diplomats?
-#end
-
-#newsite
-#name "Redbeard Clan"
-#rarity 1
-#level 0
-#decunrest -3
-#mon 3502
-#mon 3503
-#com 3501
-=======
 -- Whitebeard Sage
 #newmonster 3521
 #name "Whitebeard Sage"
@@ -510,6 +473,7 @@
 #bodyguard 2
 #end
 
+
 -- Dûn
 #newmonster 3531
 #name "Dûn"
@@ -560,6 +524,9 @@
 #maxage 150
 #holy
 
+#weapon 115
+#armor 304
+
 #slowrec
 #rpcost 4
 #homesick 20
@@ -570,8 +537,50 @@
 #custommagic 1920 100
 #custommagic 1920 100
 
->>>>>>> Stashed changes
 #end
+
+-- Sites
+#newsite
+#name "Blackforge"
+#rarity 5
+#gems 3 2
+#gems 0 1
+#res 50
+#end
+
+#newsite
+#name "Puresteel Gates of Dûn"
+#rarity 5
+#wallunit 3516
+#wallmult 2
+#supply 100
+#end
+
+#newsite
+#name "Records of Dwarfkind"
+#rarity 5
+#gems 1 1
+#gems 2 1
+#homecom 3521
+#end
+
+#newsite
+#name "Dûn Moot"
+#rarity 5
+#incscale 0
+#homecom 3505
+#end
+
+#newsite
+#name "Redbeard Clan"
+#rarity 1
+#level 0
+#decunrest -3
+#mon 3502
+#mon 3503
+#com 3501
+#end
+
 
 -- Nation
 #newnation
@@ -579,13 +588,14 @@
 #epithet "Clans"
 #era 2
 #descr "Dwrwrwr"
-#summary "darws"
+#summary "Slow but hardy infantry. Powerful crossbows and devastating ballista. Homesick master smiths. No priests."
 #color 0.5 0.4 0.5
 #secondarycolor 0.8 0.3 0.4
 
 #startsite "Blackforge"
-#startsite "Puresteel Gates of Dûn"
 #startsite "Records of Dwarfkind"
+#startsite "Dûn Moot"
+#startsite "Puresteel Gates of Dûn"
 
 #startcom 3501
 #startunittype1 3512
@@ -603,7 +613,7 @@
 -- Blackbeards
 #addrecunit 3512
 #addrecunit 3513
-#addrecunit 3516
+#addrecunit 3517
 #addreccom 3514
 #addreccom 3515
 #addreccom 3516
