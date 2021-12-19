@@ -593,6 +593,7 @@
 #newsite
 #name "Redbeard Clan"
 #rarity 1
+#path 53
 #level 0
 #decunrest -3
 #mon 3502
