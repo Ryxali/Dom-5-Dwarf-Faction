@@ -539,6 +539,20 @@
 
 #end
 
+-- Mercs
+#newmerc
+#name "The Red Ravagers"
+#bossname "Rotgar"
+#level 0
+#com "Redbeard Chief"
+#unit "Redbeard Warrior"
+#nrunits 30
+#minmen 14
+#minpay 120
+#xp 5
+#recrate 50
+#end
+
 -- Sites
 #newsite
 #name "Blackforge"
