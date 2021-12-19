@@ -297,7 +297,7 @@
 #poorleader
 
 #magicskill 3 1
-#custommagic 896 100
+#custommagic 1536 100
 #researchbonus 1
 #mastersmith 1
 #resources 5
@@ -342,8 +342,8 @@
 #poorleader
 
 #magicskill 3 2
-#custommagic 896 100
-#custommagic 896 10
+#custommagic 1536 100
+#custommagic 1920 10
 #researchbonus 1
 #mastersmith 1
 #resources 10
@@ -560,6 +560,7 @@
 #gems 3 2
 #gems 0 1
 #res 50
+#homecom 3531
 #end
 
 #newsite
@@ -633,8 +634,6 @@
 #addreccom 3516
 
 -- Misc
-#addreccom 3531
-#addrecunit 3531
 
 -- Whitebeards
 #mountaincom 3521
