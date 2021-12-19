@@ -170,6 +170,7 @@
 #weapon 20
 #armor 301
 
+#ambidextrous 2
 #poorleader
 #inspirational 1
 #end
@@ -210,7 +211,7 @@
 #cleararmor
 
 #rcost 1
-#gcost 8
+#gcost 12
 #rpcost 14
 
 #weapon 14
@@ -229,7 +230,7 @@
 #clearweapons
 #cleararmor
 #rcost 1
-#gcost 8
+#gcost 12
 #rpcost 18
 
 #weapon 801
@@ -379,7 +380,7 @@
 #rcost 40
 #gcost 42
 
-#siegebonus 50
+#siegebonus 25
 #end
 
 -- Nation
