@@ -141,8 +141,8 @@
 #drawsize 20
 #hp 12
 #str 12
-#att 9
-#def 9
+#att 8
+#def 8
 #prec 10
 #prot 3
 #size 1
@@ -261,8 +261,8 @@
 #drawsize 10
 #hp 11
 #str 12
-#att 8
-#def 8
+#att 7
+#def 7
 #prec 10
 #prot 3
 #size 1
@@ -427,8 +427,8 @@
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #hp 10
 #str 10
-#att 8
-#def 8
+#att 7
+#def 7
 #prec 10
 #prot 3
 #size 1
@@ -444,6 +444,7 @@
 
 #rpcost 2
 #gcost 10020
+#poorleader
 
 #magicskill 3 1
 #custommagic 768 100
