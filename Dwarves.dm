@@ -158,19 +158,19 @@
 #newarmor 309
 #name "Helm of Dûn"
 #type 6
-#rcost 30
+#rcost 38
 #prot 27
 #magicarmor
-#enc 0
+#enc 1
 #end
 
 -- Armor of Dûn
 #newarmor 310
 #name "Armor of Dûn"
 #type 5
-#rcost 45
+#rcost 53
 #prot 25
-#enc 4
+#enc 5
 #def -4
 #magicarmor
 #end
@@ -541,6 +541,7 @@
 #nomovepen
 #maxage 250
 #holy
+#coldres -5
 
 #weapon 804
 #armor 309
