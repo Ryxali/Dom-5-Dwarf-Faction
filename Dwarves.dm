@@ -658,10 +658,13 @@
 -- Nation
 #newnation
 #name "Dûn"
-#epithet "Clans"
+#epithet "Federated Clans"
 #era 2
-#descr "Dwrwrwr"
-#summary "Slow but hardy infantry. Powerful crossbows and devastating ballista. Homesick master smiths. No priests."
+#descr "For many eras the dwarves have kept to their own. Wary, the dwarves have joined under a federation."
+#summary "Race: Slow but hardy
+Military: Infantry. powerful crossbows, devastating ballista, heavy armor
+Magic: Earth, air, water, fire. Homesick sacred master smiths
+Priests: None"
 #color 0.5 0.4 0.5
 #secondarycolor 0.8 0.3 0.4
 
