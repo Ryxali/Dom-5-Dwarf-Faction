@@ -54,6 +54,21 @@
 #explspr 10002
 #end
 
+-- Hammer of Dûn
+#newweapon 804
+#name "Hammer of Dûn"
+#len 1
+#sound 10
+#dmg 8
+#att 1
+#def 0
+#rcost 20
+#blunt
+#magic
+#twohanded
+#nratt -2
+#end
+
 -- Kilt
 #newarmor 301
 #name "Thick Wool Skirt"
@@ -72,6 +87,7 @@
 #prot 18
 #enc 3
 #def -2
+#ironarmor
 #end
 
 -- Puresteel Full Plate
@@ -82,6 +98,7 @@
 #prot 24
 #enc 4
 #def -4
+#ironarmor
 #end
 
 -- Puresteel Shirt
@@ -92,6 +109,7 @@
 #prot 15
 #enc 1
 #def 0
+#ironarmor
 #end
 
 -- Puresteel Full Shield
@@ -102,6 +120,7 @@
 #prot 20
 #enc 2
 #def 10
+#ironarmor
 #end
 
 -- Puresteel Full Helm
@@ -111,6 +130,7 @@
 #rcost 25
 #prot 26
 #enc 0
+#ironarmor
 #end
 
 -- Puresteel Pavise
@@ -121,6 +141,7 @@
 #prot 18
 #enc 2
 #def 6
+#ironarmor
 #end
 
 -- Puresteel Coif
@@ -130,6 +151,28 @@
 #rcost 12
 #prot 12
 #enc 0
+#ironarmor
+#end
+
+-- Helm of Dûn
+#newarmor 309
+#name "Helm of Dûn"
+#type 6
+#rcost 30
+#prot 27
+#magicarmor
+#enc 0
+#end
+
+-- Armor of Dûn
+#newarmor 310
+#name "Armor of Dûn"
+#type 5
+#rcost 45
+#prot 25
+#enc 4
+#def -4
+#magicarmor
 #end
 
 -- Redbeard Chief
@@ -476,22 +519,22 @@
 
 
 -- Dûn
-#newmonster 3531
-#name "Dûn"
+#newmonster 3532
+#name "Paladin of Dûn"
 #descr "Sacred beardless Dwarf"
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #hp 10
 #str 10
-#att 8
-#def 8
+#att 9
+#def 6
 #prec 10
-#prot 3
+#prot 15
 #size 1
-#mr 14
-#mor 13
-#enc 4
-#mapmove 8
+#mr 15
+#mor 14
+#enc 5
+#mapmove 6
 #ap 10
 #eyes 2
 #humanoid
@@ -499,6 +542,12 @@
 #maxage 250
 #holy
 
+#weapon 804
+#armor 309
+#armor 310
+
+#rpcost 54
+#gcost 24
 #end
 
 -- Smith Elder
@@ -589,6 +638,7 @@
 #rarity 5
 #incscale 0
 #homecom 3505
+#homemon 3532
 #path 8
 #end
 
