@@ -665,8 +665,9 @@
 Military: Infantry. powerful crossbows, devastating ballista, heavy armor
 Magic: Earth, air, water, fire. Homesick sacred master smiths
 Priests: None"
-#color 0.5 0.4 0.5
-#secondarycolor 0.8 0.3 0.4
+#color 0.47 0.36 0.63
+#secondarycolor 0.49 0.26 0.33
+#flag "Dwarves/flag2.tga"
 
 #startsite "Blackforge"
 #startsite "Records of Dwarfkind"
