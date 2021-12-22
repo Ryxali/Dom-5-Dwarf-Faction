@@ -314,20 +314,26 @@
 #enc 4
 #mapmove 8
 #ap 10
-#eyes 2
+#eyes 2r
 #humanoid
 #nomovepen
 #supplybonus -1
 #maxage 250
 
+#weapon 801
+#armor 306
+#armor 303
+#armor 305
 
-#rpcost 2
-#gcost 10000
+#rpcost 1
+#gcost 10025
 #end
 
 -- Blackbeard Artisan
 #newmonster 3514
 #copystats 3511
+#clearweapons
+#cleararmor
 #name "Blackbeard Artisan"
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
@@ -344,11 +350,14 @@
 #mastersmith 1
 #resources 5
 #homesick 10
+#rpcost 2
 #end
 
 -- Blackbeard Lord Commander
 #newmonster 3515
 #copystats 3511
+#clearweapons
+#cleararmor
 #name "Blackbeard Lord Commander"
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Brawler_0.tga"
@@ -371,6 +380,8 @@
 -- Blackbeard Master Artisan
 #newmonster 3516
 #copystats 3511
+#clearweapons
+#cleararmor
 #name "Blackbeard Master Artisan"
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
@@ -390,11 +401,14 @@
 #resources 10
 #homesick 10
 #startage 190
+#rpcost 2
 #end
 
 -- Blackbeard Infantry
 #newmonster 3512
 #copystats 3511
+#clearweapons
+#cleararmor
 #name "Blackbeard Infantry"
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Brawler_0.tga"
@@ -413,6 +427,8 @@
 -- Blackbeard Arbalest
 #newmonster 3513
 #copystats 3511
+#clearweapons
+#cleararmor
 #name "Blackbeard Arbalest"
 #descr "Angery"
 #spr1 "Dwarves/Redbeard_Shaman_0.tga"
@@ -674,7 +690,7 @@ Priests: None"
 #startsite "Dûn Moot"
 #startsite "Puresteel Gates of Dûn"
 
-#startcom 3501
+#startcom 3511
 #startunittype1 3512
 #startunitnbrs1 10
 #startunittype2 3513
@@ -691,6 +707,7 @@ Priests: None"
 #addrecunit 3512
 #addrecunit 3513
 #addrecunit 3517
+#addreccom 3511
 #addreccom 3514
 #addreccom 3515
 #addreccom 3516
