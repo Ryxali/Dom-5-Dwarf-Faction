@@ -767,6 +767,7 @@ Priests: None"
 #nolog
 #req_code 0
 #req_code -301
+#req_code -302
 #code -300
 #msg "Dwarves of Whitebeard and Redbeard clans are gathering for the winter moot in Dûn."
 #end
@@ -791,23 +792,8 @@ Priests: None"
 #unrest 20
 #end
 
--- Fire moot (NofulfillReq Outcome)
-#newevent
-#rarity 0
-#req_code -300
-#req_season 3
-#req_owncapital 1
-#req_fornation 120
-#req_nomonster 3505 -- Redbeard Shaman
-#req_monster 3514 -- Blackbeard Artisan
-#req_monster 3521 -- Whitebeard Sage
-#code 0
-#msg "At the time of the moot no Redbeard Shaman was present. The lack of a representative shakes the nation."
-#code -301
-#unrest 30
-#end
 
--- Fire moot (NofulfillReq Outcome)
+-- Validate moot (Missing Blackbeard, Whitebeard)
 #newevent
 #rarity 0
 #req_code -300
@@ -818,12 +804,12 @@ Priests: None"
 #req_nomonster 3514 -- Blackbeard Artisan
 #req_nomonster 3521 -- Whitebeard Sage
 #code 0
-#msg "At the time of the moot only Redbeards were present. The lack of a representative shakes the nation."
-#code -301
+#msg "At the time of the moot only Redbeards were present. The other clans are outraged."
+#code -302
 #unrest 30
 #end
 
--- Fire moot (NofulfillReq Outcome)
+-- Validate moot (Missing Redbeard, Whitebeard)
 #newevent
 #rarity 0
 #req_code -300
@@ -834,12 +820,12 @@ Priests: None"
 #req_monster 3514 -- Blackbeard Artisan
 #req_nomonster 3521 -- Whitebeard Sage
 #code 0
-#msg "At the time of the moot only Blackbeards were present. The lack of a representative shakes the nation."
-#code -301
+#msg "At the time of the moot only Blackbeards were present. The other clans are outraged."
+#code -302
 #unrest 30
 #end
 
--- Fire moot (NofulfillReq Outcome)
+-- Validate moot (Missing Redbeard, Blackbeard)
 #newevent
 #rarity 0
 #req_code -300
@@ -850,12 +836,12 @@ Priests: None"
 #req_nomonster 3514 -- Blackbeard Artisan
 #req_monster 3521 -- Whitebeard Sage
 #code 0
-#msg "At the time of the moot no Whitebeards were present. The lack of a representative shakes the nation."
-#code -301
+#msg "At the time of the moot only Whitebeards were present. The other clans are outraged."
+#code -302
 #unrest 30
 #end
 
--- Fire moot (NofulfillReq Outcome)
+-- Validate moot (Missing All)
 #newevent
 #rarity 0
 #req_code -300
@@ -867,11 +853,27 @@ Priests: None"
 #req_nomonster 3521 -- Whitebeard Sage
 #code 0
 #msg "At the time of the moot none were to show. This stirs the nation."
-#code -301
+#code -302
 #unrest 50
 #end
 
--- Fire moot (NofulfillReq Outcome)
+-- Validate moot (Missing Redbeard)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_nomonster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "At the time of the moot no Redbeard Shaman was present. The lack of a representative shakes the nation."
+#code -302
+#unrest 30
+#end
+
+-- Validate moot (Missing Blackbeard)
 #newevent
 #rarity 0
 #req_code -300
@@ -883,11 +885,11 @@ Priests: None"
 #req_monster 3521 -- Whitebeard Sage
 #code 0
 #msg "At the time of the moot no Blackbeard Artisan was present. The lack of a representative shakes the nation."
-#code -301
+#code -302
 #unrest 30
 #end
 
--- Fire moot (NofulfillReq Outcome)
+-- Validate moot (Missing Whitebeard)
 #newevent
 #rarity 0
 #req_code -300
@@ -899,120 +901,155 @@ Priests: None"
 #req_nomonster 3521 -- Whitebeard Sage
 #code 0
 #msg "At the time of the moot no Whitebeard Sage was present. The lack of a representative shakes the nation."
+#code -302
+#unrest 30
+#end
+
+-- Validate moot (All present)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_monster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#msg "All the clans have gathered for the winter moot."
 #code -301
+#end
+
+-- Fire moot (Bad Outcome)
+#newevent
+#rarity 0
+#req_code -301
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_minunrest 40
+#code 0
+#msg "At the moot a disagreement on the proper ingredients for ale consumed the agenda. No progress was made and many a dwarf are upset."
 #unrest 30
 #end
 
 -- Fire moot (Bad Outcome)
 #newevent
 #rarity 0
-#req_code -300
+#req_code -301
 #req_season 3
 #req_owncapital 1
 #req_fornation 120
 #req_minunrest 40
-#code 0
-#msg "Dwarves met at the moot."
-#unrest 20
-#end
-
--- Fire moot (Bad Outcome)
-#newevent
-#rarity 0
-#req_code -300
-#req_season 3
-#req_owncapital 1
-#req_fornation 120
-#req_minunrest 40
-#req_monster 3505 -- Redbeard Shaman
-#req_monster 3514 -- Blackbeard Artisan
+#req_unluck 2
 #req_monster 3521 -- Whitebeard Sage
 #code 0
-#msg "Dwarves met at the moot. Whitebeard ded"
+#msg "The moot concluded after a major disagreement lead to a duel between clans."
 #killmon 3521
-#unrest 15
+#unrest 25
 #end
 
 -- Fire moot (Bad Outcome)
 #newevent
 #rarity 0
-#req_code -300
+#req_code -301
 #req_season 3
 #req_owncapital 1
 #req_fornation 120
 #req_minunrest 40
-#req_monster 3505 -- Redbeard Shaman
+#req_unluck 2
 #req_monster 3514 -- Blackbeard Artisan
-#req_monster 3521 -- Whitebeard Sage
 #code 0
-#msg "Dwarves met at the moot. Blackbeard ded"
+#msg "The moot concluded after a major disagreement lead to a duel between clans."
 #killmon 3505
-#unrest 15
+#unrest 25
 #end
 
 -- Fire moot (Bad Outcome)
 #newevent
 #rarity 0
-#req_code -300
+#req_code -301
 #req_season 3
 #req_owncapital 1
 #req_fornation 120
 #req_minunrest 40
+#req_unluck 2
 #req_monster 3505 -- Redbeard Shaman
-#req_monster 3514 -- Blackbeard Artisan
-#req_monster 3521 -- Whitebeard Sage
 #code 0
-#msg "Dwarves met at the moot. Redbeard ded"
+#msg "The moot concluded after a major disagreement lead to a duel between clans."
 #killmon 3505
-#unrest 15
+#unrest 25
 #end
 
 -- Fire moot (Good Outcome)
 #newevent
 #rarity 0
-#req_code -300
+#req_code -301
 #req_season 3
 #req_owncapital 1
 #req_fornation 120
 #req_maxunrest 39
-#req_monster 3505 -- Redbeard Shaman
-#req_monster 3514 -- Blackbeard Artisan
-#req_monster 3521 -- Whitebeard Sage
+#req_luck 2
 #code 0
-#msg "Dwarves met at the moot. (Good 1)"
+#msg "The moot concluded with many great reforms being passed."
 #unrest -20
+#landgold 10
+#landprod 30
 #end
 
 -- Fire moot (Good Outcome)
 #newevent
 #rarity 0
-#req_code -300
+#req_code -301
 #req_season 3
 #req_owncapital 1
 #req_fornation 120
 #req_maxunrest 39
-#req_monster 3505 -- Redbeard Shaman
-#req_monster 3514 -- Blackbeard Artisan
-#req_monster 3521 -- Whitebeard Sage
+#req_chaos -1
 #code 0
-#msg "Dwarves met at the moot. (Good 2)"
+#msg "The moot was held in peace."
 #unrest -20
+#decscale3 0
 #end
 
--- Fire moot (Good Outcome)
+-- Fire moot (Good Outcome but bad)
 #newevent
 #rarity 0
-#req_code -300
+#req_code -301
 #req_season 3
 #req_owncapital 1
 #req_fornation 120
 #req_maxunrest 39
-#req_monster 3505 -- Redbeard Shaman
-#req_monster 3514 -- Blackbeard Artisan
-#req_monster 3521 -- Whitebeard Sage
+#req_unluck 1
 #code 0
-#msg "Dwarves met at the moot. (Good 3)"
-#unrest -20
+#msg "The moot was abruptly cancelled shortly after plesantries were exchanged. People are now heading back home."
+#end
+
+-- Moot bad times
+#newevent
+#rarity 1
+#req_code -302
+#req_targmon 3505
+#req_targmon 3514
+#req_targmon 3521
+#req_owncapital 1
+#req_fornation 120
+#msg "Angry, people harrassed one of the representatives."
+#gainaff 67,108,864
+#unrest 17
+#end
+
+-- Moot bad times
+#newevent
+#rarity 1
+#req_code -302
+#req_targmon 3505
+#req_targmon 3514
+#req_targmon 3521
+#req_owncapital 1
+#req_fornation 120
+#msg "Angry, people harrassed one of the representatives."
+#gainaff 2,097,152
+#unrest 17
 #end
 
 -- Brawl
