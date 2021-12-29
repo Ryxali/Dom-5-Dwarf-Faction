@@ -1,6 +1,7 @@
 #modname "Dwarves"
 #description "dorfs"
 #version 1.0
+#icon "Dwarves/banner.tga"
 
 -- War Hammer
 #newweapon 801
@@ -449,8 +450,8 @@
 #newmonster 3517
 #name "Blackbeard Ballista"
 #descr "Angery"
-#spr1 "Dwarves/Redbeard_Mauler_0.tga"
-#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#spr1 "Dwarves/Ballista.tga"
+#spr2 "Dwarves/Ballista.tga"
 #drawsize 10
 #hp 22
 #str 12
@@ -607,6 +608,30 @@
 
 #end
 
+-- Spells
+
+-- Special Claymen
+#newspell
+#copyspell 890
+#fatiguecost 300
+#restricted -1
+#end
+
+#selectspell 890
+#notfornation -1
+#end
+
+-- Special Terracotta
+#newspell
+#copyspell 898
+#fatiguecost 700
+#restricted -1
+#end
+
+#selectspell 898
+#notfornation -1
+#end
+
 -- Mercs
 #newmerc
 #name "The Red Ravagers"
@@ -630,15 +655,8 @@
 #res 50
 #homecom 3531
 #path 0
-#end
-
-#newsite
-#name "Puresteel Gates of Dûn"
-#rarity 5
-#wallunit 3516
+#wallunit 3517
 #wallmult 2
-#supply 100
-#path 8
 #end
 
 #newsite
@@ -672,7 +690,7 @@
 
 
 -- Nation
-#newnation
+#selectnation 120
 #name "Dûn"
 #epithet "Federated Clans"
 #era 2
@@ -688,7 +706,6 @@ Priests: None"
 #startsite "Blackforge"
 #startsite "Records of Dwarfkind"
 #startsite "Dûn Moot"
-#startsite "Puresteel Gates of Dûn"
 
 #startcom 3511
 #startunittype1 3512
@@ -737,3 +754,271 @@ Priests: None"
 #templepic 4
 #homefort 19
 #end
+
+-- Events
+
+
+-- Prepare moot
+#newevent
+#rarity 0
+#req_season 2
+#req_owncapital 1
+#req_fornation 120
+#nolog
+#req_code 0
+#req_code -301
+#code -300
+#msg "Dwarves of Whitebeard and Redbeard clans are gathering for the winter moot in Dûn."
+#end
+
+-- Redbeards wreck
+#newevent
+#rarity 1
+#req_code -300
+#req_owncapital 1
+#req_fornation 120
+#msg "A gang of Redbeards here for the moot trashed one of the local establishments. To avoid further agitation the state has reimbursed the owner."
+#gold -100
+#end
+
+-- Turmoil at moot
+#newevent
+#rarity 1
+#req_code -300
+#req_owncapital 1
+#req_fornation 120
+#msg "A friendly disagreement between a Blackbeard and a Whitebeard quickly turned sour. A brawl ensued."
+#unrest 20
+#end
+
+-- Fire moot (NofulfillReq Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_nomonster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "At the time of the moot no Redbeard Shaman was present. The lack of a representative shakes the nation."
+#code -301
+#unrest 30
+#end
+
+-- Fire moot (NofulfillReq Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_monster 3505 -- Redbeard Shaman
+#req_nomonster 3514 -- Blackbeard Artisan
+#req_nomonster 3521 -- Whitebeard Sage
+#code 0
+#msg "At the time of the moot only Redbeards were present. The lack of a representative shakes the nation."
+#code -301
+#unrest 30
+#end
+
+-- Fire moot (NofulfillReq Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_nomonster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_nomonster 3521 -- Whitebeard Sage
+#code 0
+#msg "At the time of the moot only Blackbeards were present. The lack of a representative shakes the nation."
+#code -301
+#unrest 30
+#end
+
+-- Fire moot (NofulfillReq Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_nomonster 3505 -- Redbeard Shaman
+#req_nomonster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "At the time of the moot no Whitebeards were present. The lack of a representative shakes the nation."
+#code -301
+#unrest 30
+#end
+
+-- Fire moot (NofulfillReq Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_nomonster 3505 -- Redbeard Shaman
+#req_nomonster 3514 -- Blackbeard Artisan
+#req_nomonster 3521 -- Whitebeard Sage
+#code 0
+#msg "At the time of the moot none were to show. This stirs the nation."
+#code -301
+#unrest 50
+#end
+
+-- Fire moot (NofulfillReq Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_monster 3505 -- Redbeard Shaman
+#req_nomonster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "At the time of the moot no Blackbeard Artisan was present. The lack of a representative shakes the nation."
+#code -301
+#unrest 30
+#end
+
+-- Fire moot (NofulfillReq Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_monster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_nomonster 3521 -- Whitebeard Sage
+#code 0
+#msg "At the time of the moot no Whitebeard Sage was present. The lack of a representative shakes the nation."
+#code -301
+#unrest 30
+#end
+
+-- Fire moot (Bad Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_minunrest 40
+#code 0
+#msg "Dwarves met at the moot."
+#unrest 20
+#end
+
+-- Fire moot (Bad Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_minunrest 40
+#req_monster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "Dwarves met at the moot. Whitebeard ded"
+#killmon 3521
+#unrest 15
+#end
+
+-- Fire moot (Bad Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_minunrest 40
+#req_monster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "Dwarves met at the moot. Blackbeard ded"
+#killmon 3505
+#unrest 15
+#end
+
+-- Fire moot (Bad Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_minunrest 40
+#req_monster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "Dwarves met at the moot. Redbeard ded"
+#killmon 3505
+#unrest 15
+#end
+
+-- Fire moot (Good Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_maxunrest 39
+#req_monster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "Dwarves met at the moot. (Good 1)"
+#unrest -20
+#end
+
+-- Fire moot (Good Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_maxunrest 39
+#req_monster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "Dwarves met at the moot. (Good 2)"
+#unrest -20
+#end
+
+-- Fire moot (Good Outcome)
+#newevent
+#rarity 0
+#req_code -300
+#req_season 3
+#req_owncapital 1
+#req_fornation 120
+#req_maxunrest 39
+#req_monster 3505 -- Redbeard Shaman
+#req_monster 3514 -- Blackbeard Artisan
+#req_monster 3521 -- Whitebeard Sage
+#code 0
+#msg "Dwarves met at the moot. (Good 3)"
+#unrest -20
+#end
+
+-- Brawl
+--#newevent
+--#rarity 0
+--#req_fornation 120
+--#req_monster 1000 -- Whitebeard
+--#req_monster 1001 -- Blackbeard
+--#end
