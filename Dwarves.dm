@@ -8,8 +8,8 @@
 #name "Battle Hammer"
 #len 1
 #sound 10
-#dmg 6
-#att 1
+#dmg 7
+#att 2
 #def 0
 #rcost 3
 #blunt
@@ -21,7 +21,7 @@
 -- Arbalest
 #newweapon 802
 #name "Steel Arbalest"
-#rcost 12
+#rcost 13
 #sound 13
 #twohanded
 #nratt -3
@@ -89,6 +89,7 @@
 #enc 3
 #def -2
 #ironarmor
+#magicarmor
 #end
 
 -- Puresteel Full Plate
@@ -100,6 +101,7 @@
 #enc 4
 #def -4
 #ironarmor
+#magicarmor
 #end
 
 -- Puresteel Shirt
@@ -111,6 +113,7 @@
 #enc 1
 #def 0
 #ironarmor
+#magicarmor
 #end
 
 -- Puresteel Full Shield
@@ -122,6 +125,7 @@
 #enc 2
 #def 10
 #ironarmor
+#magicarmor
 #end
 
 -- Puresteel Full Helm
@@ -132,6 +136,7 @@
 #prot 26
 #enc 0
 #ironarmor
+#magicarmor
 #end
 
 -- Puresteel Pavise
@@ -143,6 +148,7 @@
 #enc 2
 #def 6
 #ironarmor
+#magicarmor
 #end
 
 -- Puresteel Coif
@@ -153,6 +159,7 @@
 #prot 12
 #enc 0
 #ironarmor
+#magicarmor
 #end
 
 -- Helm of Dûn
@@ -179,7 +186,7 @@
 -- Redbeard Chief
 #newmonster 3501
 #name "Redbeard Chief"
-#descr "Angery"
+#descr "The chiefs are the leaders of the various redbeard tribes, and are known to lead its' members in smaller skirmishes. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dwarves/Redbeard_Chief_0.tga"
 #spr2 "Dwarves/Redbeard_Chief_1.tga"
 #drawsize 20
@@ -214,7 +221,7 @@
 #newmonster 3504
 #copystats 3501
 #name "Redbeard Brawler"
-#descr "Angery"
+#descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dwarves/Redbeard_Brawler_0.tga"
 #spr2 "Dwarves/Redbeard_Brawler_1.tga"
 #clearweapons
@@ -225,16 +232,22 @@
 #weapon 20
 #armor 301
 
+#att 11
+#def 11
+#berserk 5
 #ambidextrous 2
 #poorleader
-#inspirational 1
+#inspirational 2
+#autocompete
+#startaff 5
+#fear 5
 #end
 
 -- Redbeard Shaman
 #newmonster 3505
 #copystats 3501
 #name "Redbeard Shaman"
-#descr "Angery"
+#descr "The shaman are the spiritual leaders of the clans. The chiefs consult them regularly as to not anger the spirits and the earth. Shaman are capable earth mages and fierce fighters. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dwarves/Redbeard_Shaman_0.tga"
 #spr2 "Dwarves/Redbeard_Shaman_1.tga"
 
@@ -243,6 +256,7 @@
 
 #rpcost 2
 
+#weapon 7
 #armor 301
 #armor 148
 
@@ -255,11 +269,32 @@
 
 #end
 
+-- Redbeard Warrior (2 hammers)
+#newmonster 3503
+#copystats 3501
+#name "Redbeard Warrior"
+#descr "The warriors of the clans are fierce, but unruly. They wield hammers and light armor and are as such quick by dwarf standards. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
+#spr1 "Dwarves/Redbeard_Berserker_0.tga"
+#spr2 "Dwarves/Redbeard_Berserker_1.tga"
+#clearweapons
+#cleararmor
+#rcost 1
+#gcost 13
+#rpcost 18
+
+#weapon 801
+#weapon 801
+#armor 301
+
+#ambidextrous 2
+#undisciplined
+#end
+
 -- Redbeard Warrior (Maul)
 #newmonster 3502
 #copystats 3501
 #name "Redbeard Warrior"
-#descr "Angery"
+#descr "The warriors of the clans are fierce, but unruly. They wield hammers and light armor and are as such quick by dwarf standards. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #clearweapons
@@ -275,33 +310,12 @@
 #undisciplined
 #end
 
--- Redbeard Warrior (2 hammers)
-#newmonster 3503
-#copystats 3501
-#name "Redbeard Warrior"
-#descr "Angery"
-#spr1 "Dwarves/Redbeard_Berserker_0.tga"
-#spr2 "Dwarves/Redbeard_Berserker_1.tga"
-#clearweapons
-#cleararmor
-#rcost 1
-#gcost 12
-#rpcost 18
-
-#weapon 801
-#weapon 801
-#armor 301
-
-#ambidextrous 2
-#undisciplined
-#end
-
 -- Blackbeard Captain
 #newmonster 3511
 #name "Blackbeard Captain"
-#descr "Angery"
-#spr1 "Dwarves/Redbeard_Mauler_0.tga"
-#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#descr "The Blackbeard captains serve in menial tasks, such as organizing the guard and leading the rare expedition. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
+#spr1 "Dwarves/Blackbeard_Captain_0.tga"
+#spr2 "Dwarves/Blackbeard_Captain_0.tga"
 #drawsize 10
 #hp 11
 #str 12
@@ -336,7 +350,7 @@
 #clearweapons
 #cleararmor
 #name "Blackbeard Artisan"
-#descr "Angery"
+#descr "To be an artisan of blackforge is one of the greatest honors a dwarf can achieve. These though are considered more apprentices than professionals, where they toil according to the directives of the masters, performing many of the more menial tasks of blackforge. Artisans are adept earth mages, provide additional resources, and are able to forge items more expertly than other mages. They are however unwilling to leave their home and will suffer wounds and ultimately perish should they be away for too long."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #gcost 10030
@@ -360,7 +374,7 @@
 #clearweapons
 #cleararmor
 #name "Blackbeard Lord Commander"
-#descr "Angery"
+#descr "Each dedicated a hall, the lords of Blackbeard are vital members for most functions of society. Beyond their role as statesmen they endure a longstanding tradition of the army, harkoning back to the warring period of old. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
 #spr1 "Dwarves/Redbeard_Brawler_0.tga"
 #spr2 "Dwarves/Redbeard_Brawler_1.tga"
 #rcost 1
@@ -369,6 +383,7 @@
 #size 2
 #mounted
 #enc 6
+#att 10
 
 #weapon 801
 #armor 306
@@ -384,7 +399,7 @@
 #clearweapons
 #cleararmor
 #name "Blackbeard Master Artisan"
-#descr "Angery"
+#descr "To be an artisan of blackforge is one of the greatest honors a dwarf can achieve. To become a master artisan a dwarf must first toil in apprenticeship for a century. Artisans are adept earth mages, provide additional resources, and are able to forge items more expertly than other mages. They are however unwilling to leave their home and will suffer wounds and ultimately perish should they be away for too long."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #gcost 10040
@@ -393,7 +408,7 @@
 #weapon 115
 #armor 304
 
-#poorleader
+#noleader
 
 #magicskill 3 2
 #custommagic 1536 100
@@ -411,12 +426,12 @@
 #clearweapons
 #cleararmor
 #name "Blackbeard Infantry"
-#descr "Angery"
-#spr1 "Dwarves/Redbeard_Brawler_0.tga"
-#spr2 "Dwarves/Redbeard_Brawler_1.tga"
+#descr "The infantry of the Blackbeards are staunch protectors of the front line. They wield a large shield and a weighty hammer. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
+#spr1 "Dwarves/Blackbeard_Infantry_0.tga"
+#spr2 "Dwarves/Blackbeard_Infantry_1.tga"
 #rcost 1
-#gcost 11
-#rpcost 22
+#gcost 10
+#rpcost 20
 
 #weapon 801
 #armor 306
@@ -431,9 +446,9 @@
 #clearweapons
 #cleararmor
 #name "Blackbeard Arbalest"
-#descr "Angery"
-#spr1 "Dwarves/Redbeard_Shaman_0.tga"
-#spr2 "Dwarves/Redbeard_Shaman_1.tga"
+#descr "The arbalests of the Blackbeards are able to launch dense volleys upon the enemy. They wield a large shield and a weighty hammer. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
+#spr1 "Dwarves/Blackbeard_Arbalest_0.tga"
+#spr2 "Dwarves/Blackbeard_Arbalest_1.tga"
 #rcost 1
 #gcost 10
 #rpcost 20
@@ -449,7 +464,7 @@
 -- Blackbeard Ballista
 #newmonster 3517
 #name "Blackbeard Ballista"
-#descr "Angery"
+#descr "This instrument of destruction have since long guarded the gates of Blackforge. Its mechanism launches tremendously large and powerful bolts that is capable of injuring if not outright killing small groups of enemies, or make serious harm to enemy fortifications. Its weight though leaves it immobile on the battlefield and has previously made it impossible to move. Recent advancements by the artisans have made it possible to at least travel with it for lengthy campaigns."
 #spr1 "Dwarves/Ballista.tga"
 #spr2 "Dwarves/Ballista.tga"
 #drawsize 10
@@ -467,6 +482,7 @@
 #ap 6
 #miscshape
 #immobile
+#pierceres
 #maxage 250
 
 #weapon 803
@@ -482,7 +498,7 @@
 -- Whitebeard Sage
 #newmonster 3521
 #name "Whitebeard Sage"
-#descr "Angery"
+#descr "The sages of the whitebeard clan serve an instrumental role within the empire. They are the recordkeepers of every invention, dispute, altercation, and event and their records span for close to a millennia. The whitebeard sage make for excellent researchers, and are adept earth mages - some also proficient in water and air magic. Whitebeards only reside in the peaks of highlands and mountains, and can only be recruited from there."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #hp 10
@@ -501,6 +517,7 @@
 #humanoid
 #maxage 250
 
+#weapon 92
 
 #rpcost 2
 #gcost 10020
@@ -520,7 +537,7 @@
 #clearspec
 #clearmagic
 #name "Whitebeard Kinsman"
-#descr "Angery"
+#descr "A light, mobile infantry by dwarf standards. They wield only a hammer, and generally serve as bodyguards for the sages, who need plenty of protection as the truth of the records hold not only moments of wisdom and virtue, but also moments of vice and wrath. Whitebeards only reside in the peaks of highlands and mountains, and can only be recruited from there."
 #spr1 "Dwarves/Redbeard_Shaman_0.tga"
 #spr2 "Dwarves/Redbeard_Shaman_1.tga"
 #rcost 1
@@ -538,7 +555,7 @@
 -- Dûn
 #newmonster 3532
 #name "Paladin of Dûn"
-#descr "Sacred beardless Dwarf"
+#descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with earthen skin. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #hp 10
@@ -571,7 +588,7 @@
 -- Smith Elder
 #newmonster 3531
 #name "Smith Elder"
-#descr "Angery"
+#descr "Revered since the days of old, the smith elders of dwarfkind still hold an exalted status within the empire. Solitary and devoted to their craft, they are supreme experts in forging items. They are however unwilling to leave their home and will suffer wounds and ultimately perish should they be away for too long."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #hp 10
@@ -590,6 +607,7 @@
 #humanoid
 #nomovepen
 #maxage 250
+#noleader
 #holy
 
 #weapon 115
@@ -606,6 +624,101 @@
 #custommagic 1920 100
 #custommagic 1920 100
 
+#end
+
+#newmonster 3533
+#name "Magnum Opus"
+#descr "The last work of a smith elder, this ancient craft requires the smith to echew his very essence to achieve this feat of creation. The Magnum Opus is a construct that has inherited and amplified the magical powers of its' creator. They are incredibly tough and make for a versatile combatant."
+#spr1 "Dwarves/Magnum_Opus_0.tga"
+#spr2 "Dwarves/Magnum_Opus_1.tga"
+#hp 34
+#str 18
+#att 10
+#def 10
+#prec 14
+#prot 24
+#size 3
+#mr 15
+#mor 30
+#enc 1
+#mapmove 16
+#ap 20
+#eyes 2
+#humanoid
+#inanimate
+#startage 280
+#maxage 3000
+#noleader
+#holy
+
+#slowrec
+#rpcost 4
+#gcost 10050
+#poisonres 15
+#bluntres
+
+#magicskill 3 2
+#magicskill 4 1
+#custommagic 1920 100
+#custommagic 1920 100
+#magicboost 0 1
+#magicboost 1 1
+#magicboost 2 1
+#magicboost 3 1
+
+#end
+
+#newmonster 3534
+#copystats 3533
+#copysprite 3533
+#name "Hero 1 - Magnum Opus"
+#desc "Slept"
+#clearmagic
+#magicskill 3 2
+#magicskill 4 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#latehero 15
+#end
+
+#newmonster 3535
+#copystats 3533
+#copysprite 3533
+#name "Hero 2 - Maybe cool siege thing? Supplies?"
+#desc "Slept"
+#clearmagic
+#magicskill 3 2
+#magicskill 4 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#end
+
+#newmonster 3536
+#copystats 3533
+#copysprite 3533
+#name "Hero 3 - Old dwarf death mage?"
+#desc "Slept"
+#clearmagic
+#magicskill 3 2
+#magicskill 4 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
+#end
+
+#newmonster 3537
+#copystats 3533
+#copysprite 3533
+#name "Hero 4 - Hero of each faction?"
+#desc "Slept"
+#clearmagic
+#magicskill 3 2
+#magicskill 4 2
+#magicskill 0 1
+#magicskill 1 1
+#magicskill 2 1
 #end
 
 -- Spells
@@ -630,6 +743,23 @@
 
 #selectspell 898
 #notfornation -1
+#end
+
+#newspell
+#name "Magnum Opus"
+#descr "When a smith elder has reached the crest of mastery there is but one recourse. The smith must forge their final creation. It will embody every aspect of the creator's character, it will be imbued with every power, and mirror every chink. The resulting construct will bear the name of its' creator, as the smith will now retire to spend the rest of his days in peace."
+#school 3
+#researchlevel 8
+#restricted -1
+#onlymnr 3531
+#polygetmagic 0
+#path 0 3
+#pathlevel 0 2
+#fatiguecost 1000
+#spec 545783808
+--#spec 545783808
+#effect 10130
+#damage 3533
 #end
 
 -- Mercs
@@ -1028,9 +1158,9 @@ Priests: None"
 #newevent
 #rarity 1
 #req_code -302
-#req_targmon 3505
-#req_targmon 3514
-#req_targmon 3521
+#req_targmnr 3505
+#req_targmnr 3514
+#req_targmnr 3521
 #req_owncapital 1
 #req_fornation 120
 #msg "Angry, people harrassed one of the representatives."
@@ -1042,9 +1172,9 @@ Priests: None"
 #newevent
 #rarity 1
 #req_code -302
-#req_targmon 3505
-#req_targmon 3514
-#req_targmon 3521
+#req_targmnr 3505
+#req_targmnr 3514
+#req_targmnr 3521
 #req_owncapital 1
 #req_fornation 120
 #msg "Angry, people harrassed one of the representatives."
@@ -1052,10 +1182,59 @@ Priests: None"
 #unrest 17
 #end
 
--- Brawl
---#newevent
---#rarity 0
---#req_fornation 120
---#req_monster 1000 -- Whitebeard
---#req_monster 1001 -- Blackbeard
---#end
+#newevent
+#rarity -1
+#req_targmnr 3504
+#msg "Itching for a fight, one of your brawlers started a fighting ring, of which he was the sole survivor."
+#xp 100
+#killpop 1
+#end
+
+#newevent
+#rarity 1
+#req_targmnr 3521
+#msg "One of your sages were consulted about the records of a dwarf's ancestor. It noted he suffered from a receeding beard line. The dwarf felt slighted by this indisputable fact."
+#assassin 3504
+#end
+
+#newevent
+#rarity -1
+#req_targmnr 3531
+#msg "A smith elder has forged a wondrous item! [Girdle of Might]"
+#magicitem 9
+#end
+
+#newevent
+#rarity -1
+#req_targmnr 3531
+#msg "A smith elder has forged a wondrous item! [Wall Shaker]"
+#magicitem 9
+#end
+
+#newevent
+#rarity -2
+#req_targmnr 3531
+#msg "A smith elder has forged a wondrous item! [Scutata Volturnus]"
+#magicitem 9
+#end
+
+#newevent
+#rarity -2
+#req_targmnr 3531
+#msg "A smith elder has forged a wondrous item! [Spirit Helmet]"
+#magicitem 9
+#end
+
+#newevent
+#rarity -2
+#req_targmnr 3531
+#msg "A smith elder has forged a wondrous item! [Rod of the Phoenix]"
+#magicitem 9
+#end
+
+#newevent
+#rarity -2
+#req_targmnr 3531
+#msg "A smith elder has forged a wondrous item! [Carmine Cleaver]"
+#magicitem 9
+#end
