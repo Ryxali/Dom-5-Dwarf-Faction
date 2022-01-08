@@ -1198,6 +1198,20 @@ Priests: None"
 #end
 
 #newevent
+#rarity 1
+#req_targmnr 3521
+#msg "One of your sages were consulted about the records of a dwarf's ancestor. It noted an unusually low tolerance of alchohol. The dwarf felt slighted by this indisputable fact."
+#assassin 3504
+#end
+
+#newevent
+#rarity 1
+#req_targmnr 3521
+#msg "One of your sages were consulted about the records of a dwarf's ancestor. It noted one of their creations being derivative if a junior artisan. The dwarf felt slighted by this indisputable fact."
+#assassin 3514
+#end
+
+#newevent
 #rarity -1
 #req_targmnr 3531
 #msg "A smith elder has forged a wondrous item! [Girdle of Might]"
