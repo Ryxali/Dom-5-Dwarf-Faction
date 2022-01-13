@@ -186,6 +186,7 @@
 -- Redbeard Chief
 #newmonster 3501
 #name "Redbeard Chief"
+#nametype 171
 #descr "The chiefs are the leaders of the various redbeard tribes, and are known to lead its' members in smaller skirmishes. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dwarves/Redbeard_Chief_0.tga"
 #spr2 "Dwarves/Redbeard_Chief_1.tga"
@@ -313,6 +314,7 @@
 -- Blackbeard Captain
 #newmonster 3511
 #name "Blackbeard Captain"
+#nametype 171
 #descr "The Blackbeard captains serve in menial tasks, such as organizing the guard and leading the rare expedition. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
 #spr1 "Dwarves/Blackbeard_Captain_0.tga"
 #spr2 "Dwarves/Blackbeard_Captain_0.tga"
@@ -450,7 +452,7 @@
 #spr1 "Dwarves/Blackbeard_Arbalest_0.tga"
 #spr2 "Dwarves/Blackbeard_Arbalest_1.tga"
 #rcost 1
-#gcost 10
+#gcost 10000
 #rpcost 20
 
 #weapon 802
@@ -498,6 +500,7 @@
 -- Whitebeard Sage
 #newmonster 3521
 #name "Whitebeard Sage"
+#nametype 171
 #descr "The sages of the whitebeard clan serve an instrumental role within the empire. They are the recordkeepers of every invention, dispute, altercation, and event and their records span for close to a millennia. The whitebeard sage make for excellent researchers, and are adept earth mages - some also proficient in water and air magic. Whitebeards only reside in the peaks of highlands and mountains, and can only be recruited from there."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
@@ -555,6 +558,7 @@
 -- Dûn
 #newmonster 3532
 #name "Paladin of Dûn"
+#nametype 171
 #descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with earthen skin. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
@@ -588,6 +592,7 @@
 -- Smith Elder
 #newmonster 3531
 #name "Smith Elder"
+#nametype 171
 #descr "Revered since the days of old, the smith elders of dwarfkind still hold an exalted status within the empire. Solitary and devoted to their craft, they are supreme experts in forging items. They are however unwilling to leave their home and will suffer wounds and ultimately perish should they be away for too long."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
@@ -628,6 +633,7 @@
 
 #newmonster 3533
 #name "Magnum Opus"
+#nametype 171
 #descr "The last work of a smith elder, this ancient craft requires the smith to echew his very essence to achieve this feat of creation. The Magnum Opus is a construct that has inherited and amplified the magical powers of its' creator. They are incredibly tough and make for a versatile combatant."
 #spr1 "Dwarves/Magnum_Opus_0.tga"
 #spr2 "Dwarves/Magnum_Opus_1.tga"
@@ -760,6 +766,143 @@
 --#spec 545783808
 #effect 10130
 #damage 3533
+#end
+
+-- Names
+#selectnametype 171
+#addname "Dunin"
+#addname "Dungrim"
+#addname "Dunur"
+#addname "Dunan"
+#addname "Dunor"
+#addname "Dunak"
+#addname "Dunun"
+#addname "Kadrin"
+#addname "Kadrgrim"
+#addname "Kadrur"
+#addname "Kadran"
+#addname "Kadror"
+#addname "Kadrak"
+#addname "Kadrun"
+#addname "Dvalin"
+#addname "Dvalgrim"
+#addname "Dvalur"
+#addname "Dvalan"
+#addname "Dvalor"
+#addname "Dvalak"
+#addname "Dvalun"
+#addname "Durin"
+#addname "Durgrim"
+#addname "Durur"
+#addname "Duran"
+#addname "Duror"
+#addname "Durak"
+#addname "Durun"
+#addname "Badrin"
+#addname "Badrgrim"
+#addname "Badrur"
+#addname "Badran"
+#addname "Badror"
+#addname "Badrak"
+#addname "Badrun"
+#addname "Thundrin"
+#addname "Thundrgrim"
+#addname "Thundrur"
+#addname "Thundran"
+#addname "Thundror"
+#addname "Thundrak"
+#addname "Thundrun"
+#addname "Thadrin"
+#addname "Thadrgrim"
+#addname "Thadrur"
+#addname "Thadran"
+#addname "Thadror"
+#addname "Thadrak"
+#addname "Thadrun"
+#addname "Bormin"
+#addname "Bormgrim"
+#addname "Bormur"
+#addname "Borman"
+#addname "Bormor"
+#addname "Bormak"
+#addname "Bormun"
+#addname "Bordin"
+#addname "Bordgrim"
+#addname "Bordur"
+#addname "Bordan"
+#addname "Bordor"
+#addname "Bordak"
+#addname "Bordun"
+#addname "Borkin"
+#addname "Borkgrim"
+#addname "Borkur"
+#addname "Borkan"
+#addname "Borkor"
+#addname "Borkak"
+#addname "Borkun"
+#addname "Dormin"
+#addname "Dormgrim"
+#addname "Dormur"
+#addname "Dorman"
+#addname "Dormor"
+#addname "Dormak"
+#addname "Dormun"
+#addname "Dorkin"
+#addname "Dorkgrim"
+#addname "Dorkur"
+#addname "Dorkan"
+#addname "Dorkor"
+#addname "Dorkak"
+#addname "Dorkun"
+#addname "Bardin"
+#addname "Bardgrim"
+#addname "Bardur"
+#addname "Bardan"
+#addname "Bardor"
+#addname "Bardak"
+#addname "Bardun"
+#addname "Thandrin"
+#addname "Thandrgrim"
+#addname "Thandrur"
+#addname "Thandran"
+#addname "Thandror"
+#addname "Thandrak"
+#addname "Thandrun"
+#addname "Baldin"
+#addname "Baldgrim"
+#addname "Baldur"
+#addname "Baldan"
+#addname "Baldor"
+#addname "Baldak"
+#addname "Baldun"
+#addname "Baldrin"
+#addname "Baldrgrim"
+#addname "Baldrur"
+#addname "Baldran"
+#addname "Baldror"
+#addname "Baldrak"
+#addname "Baldrun"
+#addname "Kaldin"
+#addname "Kaldgrim"
+#addname "Kaldur"
+#addname "Kaldan"
+#addname "Kaldor"
+#addname "Kaldak"
+#addname "Kaldun"
+#addname "Kaldrin"
+#addname "Kaldrgrim"
+#addname "Kaldrur"
+#addname "Kaldran"
+#addname "Kaldror"
+#addname "Kaldrak"
+#addname "Kaldrun"
+#addname "Vardin"
+#addname "Vardgrim"
+#addname "Vardur"
+#addname "Vardan"
+#addname "Vardor"
+#addname "Vardak"
+#addname "Vardun"
 #end
 
 -- Mercs
@@ -1194,7 +1337,7 @@ Priests: None"
 #rarity 1
 #req_targmnr 3521
 #msg "One of your sages were consulted about the records of a dwarf's ancestor. It noted he suffered from a receeding beard line. The dwarf felt slighted by this indisputable fact."
-#assassin 3504
+#assassin 3501
 #end
 
 #newevent
