@@ -475,8 +475,8 @@
 #newmonster 3517
 #name "Blackbeard Ballista"
 #descr "This instrument of destruction have since long guarded the gates of Blackforge. Its mechanism launches tremendously large and powerful bolts that is capable of injuring if not outright killing small groups of enemies, or make serious harm to enemy fortifications. Its weight though leaves it immobile on the battlefield and has previously made it impossible to move. Recent advancements by the artisans have made it possible to at least travel with it for lengthy campaigns."
-#spr1 "Dwarves/Ballista.tga"
-#spr2 "Dwarves/Ballista.tga"
+#spr1 "Dwarves/Ballista_0.tga"
+#spr2 "Dwarves/Ballista_1.tga"
 #drawsize 10
 #hp 22
 #str 12
