@@ -706,10 +706,12 @@
 #rpcost 4
 #gcost 10050
 #poisonres 15
-#bluntres
+#pierceres
+#slashres
 
 #weapon 92
 #weapon 92
+#magicbeing
 
 #magicskill 3 2
 #magicskill 4 1
@@ -724,14 +726,16 @@
 
 #newmonster 3534
 #copystats 3533
-#copysprite 3533
-#name "Teyrgrin, the silver-laden"
-#desc "Slept"
+#copyspr 3533
+#name "silver-laden"
+#fixedname "Teyrgrin"
+#descr "Forged before the time of recordkeeping, Teyrgrin had kept himself in a long slumber. Since he was the crowning achievement of the earthly realm he had no interest in it. Nothing to gain, nothing to learn. But he did more than sleep, he dreamt - dreamt of the infinite possibilities beyond earth and flesh, beyond the innumerable possibilities of the void.
+
+Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 #clearmagic
 #prot 14
 #magicskill 3 2
 #magicskill 4 2
-#magicskill 0 1
 #magicskill 1 1
 #magicskill 2 1
 #latehero 15
