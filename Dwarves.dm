@@ -492,7 +492,6 @@
 #ap 6
 #miscshape
 #immobile
-#pierceres
 #maxage 250
 
 #weapon 803
@@ -502,6 +501,44 @@
 #gcost 42
 
 #siegebonus 25
+#secondshape 3518
+#xploss 100
+#cleanshape
+#end
+
+-- Blackbeard Ballista
+#newmonster 3518
+#name "Blackbeard Ballista"
+#descr "This instrument of destruction have since long guarded the gates of Blackforge. Its mechanism launches tremendously large and powerful bolts that is capable of injuring if not outright killing small groups of enemies, or make serious harm to enemy fortifications. Its weight though leaves it immobile on the battlefield and has previously made it impossible to move. Recent advancements by the artisans have made it possible to at least travel with it for lengthy campaigns."
+#spr1 "Dwarves/Ballista_empty_0.tga"
+#spr2 "Dwarves/Ballista_empty_1.tga"
+#drawsize 10
+#hp 30
+#str 12
+#att 8
+#def 0
+#prec 10
+#prot 18
+#size 4
+#mr 14
+#mor 50
+#enc 4
+#mapmove 6
+#ap 6
+#miscshape
+#immobile
+#inanimate
+#poisonres 15
+#pierceres
+#maxage 250
+
+
+#rpcost 44
+#rcost 40
+#gcost 42
+
+#siegebonus 25
+#firstshape 3517
 #end
 
 
