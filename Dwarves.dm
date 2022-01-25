@@ -1304,7 +1304,7 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 #newsite
 #name "Redbeard Clan"
 #rarity 1
-#path 53
+#path 7
 #level 0
 #decunrest -3
 #mon 3502
@@ -1314,6 +1314,11 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 
 
 -- Nation
+
+-- EA Dûn, children of the earth
+
+-- MA Dûn, curse of flesh
+
 #selectnation 120
 #name "Dûn"
 #epithet "Federated Clans"
@@ -1322,7 +1327,7 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 #summary "Race: Slow but hardy
 Military: Infantry. powerful crossbows, devastating ballista, heavy armor
 Magic: Earth, air, water, fire. Homesick sacred master smiths
-Priests: None"
+Priests: Weak, but heavily armored, though only recruitable in the capital"
 #color 0.47 0.36 0.63
 #secondarycolor 0.49 0.26 0.33
 #flag "Dwarves/flag2.tga"
@@ -1709,7 +1714,7 @@ Priests: None"
 #newevent
 #rarity 1
 #req_targmnr 3521
-#msg "One of your sages were consulted about the records of a dwarf's ancestor. It noted one of their creations being derivative if a junior artisan. The dwarf felt slighted by this indisputable fact."
+#msg "One of your sages were consulted about the records of a dwarf's ancestor. It noted one of their creations being derivative of a junior artisan. The dwarf felt slighted by this indisputable fact."
 #assassin 3514
 #end
 
@@ -1753,4 +1758,49 @@ Priests: None"
 #req_targmnr 3531
 #msg "A smith elder has forged a wondrous item! [Carmine Cleaver]"
 #magicitem 9
+#end
+
+
+-- Redbeards move out
+#newevent
+#rarity 0
+#req_code 0
+#req_land 1
+#req_notanycode -303
+#req_notanycode -304
+#req_foundsite 1
+#req_fort 1
+#removesite -1
+#codedelay -303
+#killpop 60
+#msg "The local Redbeards, unhappy with the sight of the new fort constructed in their homeland, move out [Redbeard Clan]"
+#end
+
+
+-- Redbeards move in
+#newevent
+#rarity 0
+#req_land 1
+#req_code 0
+#req_nearbycode -303
+#req_fort 0
+#addsite -1
+#resetcode -303
+#code 0
+#incpop 60
+#msg "A group of red-bearded dwarves have moved in. They came seeking land free from the confines of earthen forts, and have promised to keep mostly to their own. [Redbeard Clan]"
+#end
+
+-- Redbeards migrate
+#newevent
+#rarity 0
+#req_code 0
+#req_land 1
+#req_nearbycode -303
+#req_fort 1
+#resetcode -303
+#codedelay -303
+#notext
+#msg "A group of migrating dwarves was seen in the area."
+--#nolog
 #end
