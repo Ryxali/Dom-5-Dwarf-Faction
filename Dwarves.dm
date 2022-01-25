@@ -75,7 +75,7 @@
 #copyweapon 104
 #name "Petrification"
 #aoe 0
-#mrnegateseasily
+--#mrnegateseasily
 #end
 
 -- Kilt
@@ -547,8 +547,8 @@
 #name "Whitebeard Sage"
 #nametype 171
 #descr "The sages of the whitebeard clan serve an instrumental role within the empire. They are the recordkeepers of every invention, dispute, altercation, and event and their records span for close to a millennia. The whitebeard sage make for excellent researchers, and are adept earth mages - some also proficient in water and air magic. Whitebeards only reside in the peaks of highlands and mountains, and can only be recruited from there."
-#spr1 "Dwarves/Redbeard_Mauler_0.tga"
-#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#spr1 "Dwarves/Whitebeard_Sage_0.tga"
+#spr2 "Dwarves/Whitebeard_Sage_1.tga"
 #hp 10
 #str 10
 #att 7
@@ -607,7 +607,7 @@
 #descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with earthen skin. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
-#hp 10
+#hp 11
 #str 10
 #att 9
 #def 6
@@ -697,6 +697,7 @@
 #eyes 2
 #humanoid
 #inanimate
+#pooramphibian
 #startage 280
 #maxage 3000
 #noleader
@@ -778,6 +779,15 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 #magicskill 0 1
 #magicskill 1 1
 #magicskill 2 1
+#end
+
+#newmonster 3538
+#copystats 3532
+#copyspr 3532
+#name "War Priest of Dûn"
+#gcost 10020
+#rpcost 2
+#magicskill 8 1
 #end
 
 -- Spells
@@ -1286,6 +1296,7 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 #rarity 5
 #incscale 0
 #homecom 3505
+#homecom 3538
 #homemon 3532
 #path 8
 #end
@@ -1347,9 +1358,10 @@ Priests: None"
 #addreccom 3511
 #addreccom 3514
 #addreccom 3515
-#addreccom 3516
+--#addreccom 3516
 
 -- Misc
+--#addreccom 3538
 
 -- Whitebeards
 #mountaincom 3521
