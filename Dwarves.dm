@@ -586,15 +586,14 @@
 #clearmagic
 #name "Whitebeard Kinsman"
 #descr "A light, mobile infantry by dwarf standards. They wield only a hammer, and generally serve as bodyguards for the sages, who need plenty of protection as the truth of the records hold not only moments of wisdom and virtue, but also moments of vice and wrath. Whitebeards only reside in the peaks of highlands and mountains, and can only be recruited from there."
-#spr1 "Dwarves/Redbeard_Shaman_0.tga"
-#spr2 "Dwarves/Redbeard_Shaman_1.tga"
+#spr1 "Dwarves/Whitebeard_Kinsman_0.tga"
+#spr2 "Dwarves/Whitebeard_Kinsman_1.tga"
 #rcost 1
 #gcost 10
 #rpcost 20
 
 #weapon 12
 #armor 304
-#armor 308
 
 #bodyguard 2
 #end
