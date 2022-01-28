@@ -361,8 +361,8 @@
 #cleararmor
 #name "Blackbeard Artisan"
 #descr "To be an artisan of blackforge is one of the greatest honors a dwarf can achieve. These though are considered more apprentices than professionals, where they toil according to the directives of the masters, performing many of the more menial tasks of blackforge. Artisans are adept earth mages, provide additional resources, and are able to forge items more expertly than other mages. They are however unwilling to leave their home and will suffer wounds and ultimately perish should they be away for too long."
-#spr1 "Dwarves/Redbeard_Mauler_0.tga"
-#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#spr1 "Dwarves/Blackbeard_Artisan_0.tga"
+#spr2 "Dwarves/Blackbeard_Artisan_1.tga"
 #gcost 10030
 
 #weapon 115
@@ -590,7 +590,7 @@
 #spr2 "Dwarves/Whitebeard_Kinsman_1.tga"
 #rcost 1
 #gcost 10
-#rpcost 20
+#rpcost 14
 
 #weapon 12
 #armor 304
@@ -638,8 +638,8 @@
 #name "Smith Elder"
 #nametype 171
 #descr "Revered since the days of old, the smith elders of dwarfkind still hold an exalted status within the empire. Solitary and devoted to their craft, they are supreme experts in forging items. They are however unwilling to leave their home and will suffer wounds and ultimately perish should they be away for too long."
-#spr1 "Dwarves/Redbeard_Mauler_0.tga"
-#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#spr1 "Dwarves/Smith_Elder_0.tga"
+#spr2 "Dwarves/Smith_Elder_1.tga"
 #hp 10
 #str 10
 #att 8
