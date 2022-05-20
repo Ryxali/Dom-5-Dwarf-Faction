@@ -342,6 +342,7 @@
 #eyes 2r
 #humanoid
 #nomovepen
+#darkvision 50
 #supplybonus -1
 #maxage 250
 
@@ -604,7 +605,7 @@
 #name "Paladin of Dûn"
 #nametype 171
 #descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with earthen skin. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion."
-#spr1 "Dwarves/Redbeard_Mauler_0.tga"
+#spr1 "Dwarves/Paladin.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
 #hp 11
 #str 10
@@ -1305,6 +1306,7 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 #rarity 1
 #path 7
 #level 0
+#loc 223
 #decunrest -3
 #mon 3502
 #mon 3503
@@ -1782,6 +1784,7 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #req_land 1
 #req_code 0
 #req_nearbycode -303
+#req_cave 0
 #req_fort 0
 #addsite -1
 #resetcode -303
@@ -1795,6 +1798,7 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #rarity 0
 #req_code 0
 #req_land 1
+#req_cave 0
 #req_nearbycode -303
 #req_fort 1
 #resetcode -303
