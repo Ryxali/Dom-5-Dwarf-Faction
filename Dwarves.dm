@@ -605,8 +605,8 @@
 #name "Paladin of Dûn"
 #nametype 171
 #descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with earthen skin. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion."
-#spr1 "Dwarves/Paladin.tga"
-#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#spr1 "Dwarves/Paladin_0.tga"
+#spr2 "Dwarves/Paladin_0.tga"
 #hp 11
 #str 10
 #att 9
