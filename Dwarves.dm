@@ -606,7 +606,7 @@
 #nametype 171
 #descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with skin of marble and eyes of amber. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion."
 #spr1 "Dwarves/Paladin_0.tga"
-#spr2 "Dwarves/Paladin_0.tga"
+#spr2 "Dwarves/Paladin_1.tga"
 #hp 11
 #str 10
 #att 9
@@ -783,7 +783,8 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 
 #newmonster 3538
 #copystats 3532
-#copyspr 3532
+#spr1 "Dwarves/WarPriest_0.tga"
+#spr2 "Dwarves/WarPriest_1.tga"
 #name "War Priest of Dûn"
 #gcost 10020
 #rpcost 2
