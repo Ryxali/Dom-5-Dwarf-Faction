@@ -339,7 +339,7 @@
 #enc 4
 #mapmove 8
 #ap 10
-#eyes 2r
+#eyes 2
 #humanoid
 #nomovepen
 #darkvision 50
@@ -602,9 +602,9 @@
 
 -- Dûn
 #newmonster 3532
-#name "Paladin of Dûn"
+#name "Amber Paladin"
 #nametype 171
-#descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with skin of marble and eyes of amber. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion."
+#descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with skin of marble and eyes of amber. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion. Paladins have strong natural protection but are weak to cold. They have superior vision and their hammer can turn enemies to stone."
 #spr1 "Dwarves/Paladin_0.tga"
 #spr2 "Dwarves/Paladin_1.tga"
 #hp 11
@@ -616,7 +616,7 @@
 #size 1
 #mr 15
 #mor 14
-#enc 5
+#enc 4
 #mapmove 6
 #ap 10
 #eyes 2
@@ -785,7 +785,11 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 #copystats 3532
 #spr1 "Dwarves/WarPriest_0.tga"
 #spr2 "Dwarves/WarPriest_1.tga"
-#name "War Priest of Dûn"
+#name "Ruby Paladin"
+#descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with skin of marble and eyes of ruby. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion. Paladins have strong natural protection but are weak to cold. They have superior vision and their hammer can turn enemies to stone."
+#mor 15
+#mr 16
+#att 11
 #gcost 10020
 #rpcost 2
 #magicskill 8 1
