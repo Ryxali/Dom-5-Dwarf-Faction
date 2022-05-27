@@ -604,7 +604,9 @@
 #newmonster 3532
 #name "Amber Paladin"
 #nametype 171
-#descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with skin of marble and eyes of amber. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion. Paladins have strong natural protection but are weak to cold. They have superior vision and their hammer can turn enemies to stone."
+#descr "Harkoning to ancient times the stone-kin of Dûn have come to serve a sacred role in the federation. It's members are dwarves who have waived all ties to their clan, and through a sacred ritual where they shave all hair they are blessed with skin akin to marble and gemstone eyes. Those with eyes of ruby serve as leaders and are set to learn the incantations, while those with amber execute the order's will.
+In the later age, the stone-kin have dwindled in number due in large to the change in values of the dwarf clans. In order to keep relevant, they don the finest armor produced in Blackforge, serving as the ultimate show of dwarven craftsmanship.
+Stone-kin have strong natural protection and possess magical sight, but they are weak to cold. The paladin wield a mighty hammer capable of turning those it strikes into stone."
 #spr1 "Dwarves/Paladin_0.tga"
 #spr2 "Dwarves/Paladin_1.tga"
 #hp 11
@@ -728,11 +730,11 @@
 #newmonster 3534
 #copystats 3533
 #copyspr 3533
-#name "silver-laden"
+#name "Silver-laden"
 #fixedname "Teyrgrin"
 #descr "Forged before the time of recordkeeping, Teyrgrin had kept himself in a long slumber. Since he was the crowning achievement of the earthly realm he had no interest in it. Nothing to gain, nothing to learn. But he did more than sleep, he dreamt - dreamt of the infinite possibilities beyond earth and flesh, beyond the innumerable possibilities of the void.
 
-Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
+Now Teyrgrin has awoken from his dreams, ready to make those dreams come manifest."
 #clearmagic
 #prot 14
 #magicskill 3 2
@@ -743,29 +745,30 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 #end
 
 #newmonster 3535
-#copystats 3533
-#copysprite 3533
-#name "Hero 2 - Maybe cool siege thing? Supplies?"
+#copystats 3532
+#spr1 "Dwarves/EmeraldPaladin_0.tga"
+#spr2 "Dwarves/EmeraldPaladin_1.tga"
+#name "Emerald Paladin"
+#fixedname "Radathur"
 #desc "Slept"
 #clearmagic
-#magicskill 3 2
-#magicskill 4 2
-#magicskill 0 1
-#magicskill 1 1
-#magicskill 2 1
+#magicskill 8 2
+#magicskill 6 2
+#batstartsum2d6 -9
 #end
 
 #newmonster 3536
-#copystats 3533
-#copysprite 3533
-#name "Hero 3 - Old dwarf death mage?"
+#copystats 3532
+#spr1 "Dwarves/OnyxPaladin_0.tga"
+#spr2 "Dwarves/OnyxPaladin_1.tga"
+#name "Onyx Paladin"
+#fixedname "Umbur"
 #desc "Slept"
 #clearmagic
-#magicskill 3 2
-#magicskill 4 2
-#magicskill 0 1
-#magicskill 1 1
-#magicskill 2 1
+#raiseonkill 50
+#insane 5
+#magicskill 8 2
+#magicskill 5 2
 #end
 
 #newmonster 3537
@@ -786,7 +789,9 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams manifest."
 #spr1 "Dwarves/WarPriest_0.tga"
 #spr2 "Dwarves/WarPriest_1.tga"
 #name "Ruby Paladin"
-#descr "The paladin of Dûn are dwarves that have waived all ties to their clan. They have shaved their beard and hair and devoted their service to the earth itself. In return they are blessed with skin of marble and eyes of ruby. Paladins are armored with puresteel forged by master artisans, and wield a mighty hammer carrying the emblem of their devotion. Paladins have strong natural protection but are weak to cold. They have superior vision and their hammer can turn enemies to stone."
+#descr "Harkoning to ancient times the stone-kin of Dûn have come to serve a sacred role in the federation. It's members are dwarves who have waived all ties to their clan, and through a sacred ritual where they shave all hair they are blessed with skin akin to marble and gemstone eyes. Those with eyes of ruby serve as leaders and are set to learn the incantations, while those with amber execute the order's will.
+In the later age, the stone-kin have dwindled in number due in large to the change in values of the dwarf clans. In order to keep relevant, they don the finest armor produced in Blackforge, serving as the ultimate show of dwarven craftsmanship.
+Stone-kin have strong natural protection and possess magical sight, but they are weak to cold. The paladin wield a mighty hammer capable of turning those it strikes into stone."
 #mor 15
 #mr 16
 #att 11
@@ -1348,6 +1353,8 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #addgod 606
 
 #hero1 3534
+#hero2 3535
+#hero3 3536
 
 #startcom 3511
 #startunittype1 3512
