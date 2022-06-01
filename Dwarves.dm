@@ -593,6 +593,7 @@
 #gcost 10
 #rpcost 14
 
+#maxage 250
 #weapon 12
 #armor 304
 
@@ -750,8 +751,16 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams come manifes
 #spr2 "Dwarves/EmeraldPaladin_1.tga"
 #name "Emerald Paladin"
 #fixedname "Radathur"
-#desc "Slept"
+#desc "Endowed with eyes of Emerald, Radathur was gifted power over the verdant realm. Unique in his visage, he honed his worship first with insects native to the mines, then with fauna and larger creatures native to the sun.
+Radathur is an adept mage and priest who is always guarded by nearby insects."
 #clearmagic
+#mor 17
+#mr 16
+#att 11
+#gcost 10020
+#rpcost 2
+#age 180
+#maxage 250
 #magicskill 8 2
 #magicskill 6 2
 #batstartsum2d6 -9
@@ -763,10 +772,17 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams come manifes
 #spr2 "Dwarves/OnyxPaladin_1.tga"
 #name "Onyx Paladin"
 #fixedname "Umbur"
-#desc "Slept"
+#desc "Endowed with eyes of Onyx, Umbur was gifted power over the spectral realm. While his left eye remains to allow him to see the mortal plane; his right eye is ever peering into Tartarus, a most maddening fate to endure. Even so, he can evoke its power, and he may assume command of the husks that remain after his mighty blows."
 #clearmagic
 #raiseonkill 50
 #insane 5
+#mor 17
+#mr 16
+#age 330
+#maxage 250
+#att 11
+#gcost 10020
+#rpcost 2
 #magicskill 8 2
 #magicskill 5 2
 #end
@@ -774,7 +790,7 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams come manifes
 #newmonster 3537
 #copystats 3533
 #copysprite 3533
-#name "Hero 4 - Hero of each faction?"
+#name "Blackbeard Quartermaster"
 #desc "Slept"
 #clearmagic
 #magicskill 3 2
@@ -1283,7 +1299,7 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #newsite
 #name "Blackforge"
 #rarity 5
-#gems 3 2
+#gems 3 1
 #gems 0 1
 #res 50
 #homecom 3531
@@ -1334,7 +1350,9 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #name "Dûn"
 #epithet "Federated Clans"
 #era 3
-#descr "For many eras the dwarves have kept to their own. Wary, the dwarves have joined under a federation."
+#descr "Ever since the humans of Ulm stole the secret of steel the dwarves have kept to their own. The bickering amongst the clans did not subside - in fact for a time they fractured entirely. The dwarves of Whitebeard resigned to hills and mountains, tending to the vast records of dwarfkind that span for millennia. The Redbeards on the other hand came to shun society, adopting a new nomadic and shamanistic lifestyle based on ancient traditions. Finally the Blackbeards were the ones who kept the forges lit, and have since perfected the arms required to guard its holdings from the threats of the surface world.
+
+As a new era draws to a new beginning, the dwarves are once again emboldened to strike out of their holdings. They have united in a tenuous federation with the Blackbeards as the head. They must keep vigilant lest their union crumble from internal strife."
 #summary "Race: Slow but hardy
 Military: Infantry. powerful crossbows, devastating ballista, heavy armor
 Magic: Earth, air, water, fire. Homesick sacred master smiths
@@ -1419,7 +1437,7 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #req_code -301
 #req_code -302
 #code -300
-#msg "Dwarves of Whitebeard and Redbeard clans are gathering for the winter moot in Dûn."
+#msg "Dwarves of Whitebeard and Redbeard clans are gathering for the winter moot in Dûn. For the preservation of the Federation, a shaman of the Redbeard clan and a sage of the Whitebeard clan should be present come winter."
 #end
 
 -- Redbeards wreck
