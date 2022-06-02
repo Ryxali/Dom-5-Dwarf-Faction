@@ -751,7 +751,7 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams come manifes
 #spr2 "Dwarves/EmeraldPaladin_1.tga"
 #name "Emerald Paladin"
 #fixedname "Radathur"
-#desc "Endowed with eyes of Emerald, Radathur was gifted power over the verdant realm. Unique in his visage, he honed his worship first with insects native to the mines, then with fauna and larger creatures native to the sun.
+#descr "Endowed with eyes of Emerald, Radathur was gifted power over the verdant realm. Unique in his visage, he honed his worship first with insects native to the mines, then with fauna and larger creatures native to the sun.
 Radathur is an adept mage and priest who is always guarded by nearby insects."
 #clearmagic
 #mor 17
@@ -772,7 +772,7 @@ Radathur is an adept mage and priest who is always guarded by nearby insects."
 #spr2 "Dwarves/OnyxPaladin_1.tga"
 #name "Onyx Paladin"
 #fixedname "Umbur"
-#desc "Endowed with eyes of Onyx, Umbur was gifted power over the spectral realm. While his left eye remains to allow him to see the mortal plane; his right eye is ever peering into Tartarus, a most maddening fate to endure. Even so, he can evoke its power, and he may assume command of the husks that remain after his mighty blows."
+#descr "Endowed with eyes of Onyx, Umbur was gifted power over the spectral realm. While his left eye remains to allow him to see the mortal plane; his right eye is ever peering into Tartarus, a most maddening fate to endure. Even so, he can evoke its power, and he may assume command of the husks that remain after his mighty blows."
 #clearmagic
 #raiseonkill 50
 #insane 5
@@ -791,7 +791,7 @@ Radathur is an adept mage and priest who is always guarded by nearby insects."
 #copystats 3533
 #copysprite 3533
 #name "Blackbeard Quartermaster"
-#desc "Slept"
+#descr "Slept"
 #clearmagic
 #magicskill 3 2
 #magicskill 4 2
