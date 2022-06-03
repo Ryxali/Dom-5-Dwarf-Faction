@@ -368,6 +368,7 @@
 
 #weapon 115
 #armor 304
+#mor 11
 
 #poorleader
 
@@ -395,6 +396,7 @@
 #mounted
 #enc 6
 #att 10
+#mor 14
 
 #weapon 801
 #armor 306
@@ -487,7 +489,7 @@
 #prot 18
 #size 4
 #mr 14
-#mor 13
+#mor 12
 #enc 4
 #mapmove 6
 #ap 6
@@ -558,7 +560,7 @@
 #prot 3
 #size 1
 #mr 14
-#mor 13
+#mor 11
 #enc 4
 #mapmove 8
 #ap 10
@@ -592,6 +594,7 @@
 #rcost 1
 #gcost 10
 #rpcost 14
+#mor 12
 
 #maxage 250
 #weapon 12
