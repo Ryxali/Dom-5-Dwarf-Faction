@@ -28,7 +28,7 @@
 #dmg 12
 #range 45
 #ammo 8
-#att 5
+#att 3
 #pierce
 #armorpiercing
 #bowstr
@@ -45,7 +45,7 @@
 #dmg 25
 #aoe 1
 #ammo 12
-#att 3
+#att 1
 #range 50
 #pierce
 #armorpiercing
@@ -288,8 +288,8 @@
 #clearweapons
 #cleararmor
 #rcost 1
-#gcost 13
-#rpcost 18
+#gcost 11
+#rpcost 16
 
 #weapon 801
 #weapon 801
@@ -310,7 +310,7 @@
 #cleararmor
 
 #rcost 1
-#gcost 12
+#gcost 11
 #rpcost 14
 
 #weapon 14
@@ -387,8 +387,8 @@
 #cleararmor
 #name "Blackbeard Lord Commander"
 #descr "Each dedicated a hall, the lords of Blackbeard are vital members for most functions of society. Beyond their role as statesmen they endure a longstanding tradition of the army, harkoning back to the warring period of old. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
-#spr1 "Dwarves/Redbeard_Brawler_0.tga"
-#spr2 "Dwarves/Redbeard_Brawler_1.tga"
+#spr1 "Dwarves/Goatrider_0.tga"
+#spr2 "Dwarves/Goatrider_1.tga"
 #rcost 1
 #gcost 10020
 #rpcost 2
@@ -500,7 +500,7 @@
 #weapon 803
 
 #rpcost 44
-#rcost 40
+#rcost 60
 #gcost 42
 
 #siegebonus 25
