@@ -241,7 +241,7 @@
 #weapon 92
 #weapon 20
 #armor 301
-#gcost 9992
+#gcost 9995
 
 #att 11
 #def 11
