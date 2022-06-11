@@ -507,6 +507,7 @@
 #secondshape 3518
 #xploss 100
 #cleanshape
+#aisinglerec
 #end
 
 -- Blackbeard Ballista
@@ -1424,6 +1425,9 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #fortera 3
 #templepic 4
 #homefort 19
+
+#aigoodbless 20
+#aiheavyrec 30
 #end
 
 -- Events
