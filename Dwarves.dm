@@ -8,8 +8,8 @@
 #name "Battle Hammer"
 #len 1
 #sound 10
-#dmg 7
-#att 2
+#dmg 8
+#att 1
 #def 0
 #rcost 3
 #blunt
@@ -198,10 +198,10 @@
 #descr "The chiefs are the leaders of the various redbeard tribes, and are known to lead its' members in smaller skirmishes. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dwarves/Redbeard_Chief_0.tga"
 #spr2 "Dwarves/Redbeard_Chief_1.tga"
-#drawsize 20
+#drawsize 40
 #hp 12
 #str 12
-#att 8
+#att 9
 #def 8
 #prec 10
 #prot 3
@@ -218,7 +218,7 @@
 #woundfend 1
 #berserk 3
 
-#gcost 10000
+#gcost 10002
 #rpcost 1
 
 #weapon 14
@@ -233,6 +233,7 @@
 #descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dwarves/Redbeard_Brawler_0.tga"
 #spr2 "Dwarves/Redbeard_Brawler_1.tga"
+#drawsize 15
 #clearweapons
 #cleararmor
 
@@ -240,6 +241,7 @@
 #weapon 92
 #weapon 20
 #armor 301
+#gcost 9995
 
 #att 11
 #def 11
@@ -257,6 +259,7 @@
 #copystats 3501
 #name "Redbeard Shaman"
 #descr "The shaman are the spiritual leaders of the clans. The chiefs consult them regularly as to not anger the spirits and the earth. Shaman are capable earth mages and fierce fighters. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
+#drawsize 15
 #spr1 "Dwarves/Redbeard_Shaman_0.tga"
 #spr2 "Dwarves/Redbeard_Shaman_1.tga"
 
@@ -285,11 +288,14 @@
 #descr "The warriors of the clans are fierce, but unruly. They wield hammers and light armor and are as such quick by dwarf standards. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dwarves/Redbeard_Berserker_0.tga"
 #spr2 "Dwarves/Redbeard_Berserker_1.tga"
+#drawsize 15
 #clearweapons
 #cleararmor
 #rcost 1
-#gcost 11
-#rpcost 16
+#gcost 10012
+--#gcost 12
+#rpcost 10010
+--#rpcost 16
 
 #weapon 801
 #weapon 801
@@ -306,12 +312,15 @@
 #descr "The warriors of the clans are fierce, but unruly. They wield hammers and light armor and are as such quick by dwarf standards. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dwarves/Redbeard_Mauler_0.tga"
 #spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#drawsize 15
 #clearweapons
 #cleararmor
 
 #rcost 1
-#gcost 11
-#rpcost 14
+#gcost 10012
+#rpcost 10010
+--#gcost 12
+--#rpcost 14
 
 #weapon 14
 #armor 301
@@ -365,7 +374,7 @@
 #spr1 "Dwarves/Blackbeard_Artisan_0.tga"
 #spr2 "Dwarves/Blackbeard_Artisan_1.tga"
 #gcost 10030
-
+#att 6
 #weapon 115
 #armor 304
 #mor 11
@@ -396,6 +405,7 @@
 #mounted
 #enc 6
 #att 10
+#def 10
 #mor 14
 
 #weapon 801
@@ -443,7 +453,9 @@
 #spr1 "Dwarves/Blackbeard_Infantry_0.tga"
 #spr2 "Dwarves/Blackbeard_Infantry_1.tga"
 #rcost 1
-#gcost 10
+#gcost 10010
+#rpcost 10010
+--#gcost 10
 #rpcost 20
 
 #weapon 801
@@ -463,8 +475,11 @@
 #spr1 "Dwarves/Blackbeard_Arbalest_0.tga"
 #spr2 "Dwarves/Blackbeard_Arbalest_1.tga"
 #rcost 1
-#gcost 10
-#rpcost 20
+#gcost 10010
+--#gcost 10
+#rpcost 10010
+--#rpcost 20
+#att 6
 
 #weapon 802
 #weapon 12
@@ -499,9 +514,11 @@
 
 #weapon 803
 
-#rpcost 44
+--#rpcost 44
+#rpcost 10022
 #rcost 60
-#gcost 42
+#gcost 10040
+--#gcost 42
 
 #siegebonus 25
 #secondshape 3518
@@ -593,8 +610,9 @@
 #spr1 "Dwarves/Whitebeard_Kinsman_0.tga"
 #spr2 "Dwarves/Whitebeard_Kinsman_1.tga"
 #rcost 1
-#gcost 10
-#rpcost 14
+#gcost 10008
+--#gcost 8
+#rpcost 10008
 #mor 12
 
 #maxage 250
@@ -637,8 +655,8 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #armor 309
 #armor 310
 
-#rpcost 54
-#gcost 22
+#rpcost 10020
+#gcost 10018
 #end
 
 -- Smith Elder
@@ -686,7 +704,7 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #newmonster 3533
 #name "Magnum Opus"
 #nametype 171
-#descr "The last work of a smith elder, this ancient craft requires the smith to echew his very essence to achieve this feat of creation. The Magnum Opus is a construct that has inherited and amplified the magical powers of its' creator. They are incredibly tough and make for a versatile combatant."
+#descr "The final work of a smith elder, this ancient craft requires the smith to echew his very essence to achieve this feat of creation. The Magnum Opus is a construct that has inherited and amplified the magical powers of its' creator. They are incredibly tough and make for a versatile combatant."
 #spr1 "Dwarves/Magnum_Opus_0.tga"
 #spr2 "Dwarves/Magnum_Opus_1.tga"
 #hp 34
