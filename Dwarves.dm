@@ -191,6 +191,18 @@
 #magicarmor
 #end
 
+-- Puresteel Fixtures
+#newarmor 311
+#name "Puresteel Fixtures"
+#type 4
+#rcost 20
+#prot 18
+#def 10
+#enc 0
+#ironarmor
+#magicarmor
+#end
+
 -- Redbeard Chief
 #newmonster 3501
 #name "Redbeard Chief"
@@ -496,12 +508,12 @@
 #spr1 "Dwarves/Ballista_0.tga"
 #spr2 "Dwarves/Ballista_1.tga"
 #drawsize 10
-#hp 22
+#hp 16
 #str 12
 #att 8
-#def 0
+#def 5
 #prec 10
-#prot 18
+#prot 3
 #size 4
 #mr 14
 #mor 12
@@ -513,10 +525,12 @@
 #maxage 250
 
 #weapon 803
+#armor 303
+#armor 311
 
 --#rpcost 44
 #rpcost 10022
-#rcost 60
+#rcost 10
 #gcost 10040
 --#gcost 42
 
