@@ -1,5 +1,5 @@
-#modname "Dwarves"
-#description "dorfs"
+#modname "Dûn"
+#description "A faction for the Late Age"
 #version 1.0
 #icon "Dwarves/banner.tga"
 
@@ -42,10 +42,10 @@
 #rcost 50
 #sound 13
 #nratt -3
-#dmg 25
+#dmg 20
 #aoe 1
 #ammo 12
-#att 1
+#att -5
 #range 50
 #pierce
 #armorpiercing
@@ -195,7 +195,7 @@
 #newarmor 311
 #name "Puresteel Fixtures"
 #type 4
-#rcost 20
+#rcost 14
 #prot 18
 #def 10
 #enc 0
@@ -520,9 +520,11 @@
 #enc 4
 #mapmove 6
 #ap 6
-#miscshape
+#humanoid
+#itemslots 12288
 #immobile
 #maxage 250
+#eyes 4
 
 #weapon 803
 #armor 303
@@ -553,7 +555,7 @@
 #att 8
 #def 0
 #prec 10
-#prot 18
+#prot 16
 #size 4
 #mr 14
 #mor 50
@@ -563,6 +565,7 @@
 #miscshape
 #immobile
 #inanimate
+#blind
 #poisonres 15
 #pierceres
 #maxage 250
@@ -632,7 +635,7 @@
 #maxage 250
 #weapon 12
 #armor 304
-
+#ainorec
 #bodyguard 2
 #end
 
@@ -1459,7 +1462,7 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #homefort 19
 
 #aigoodbless 20
-#aiheavyrec 30
+--#aiheavyrec 80
 #end
 
 -- Events
