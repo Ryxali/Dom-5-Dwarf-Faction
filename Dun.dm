@@ -1,7 +1,7 @@
 #modname "Dûn"
 #description "A faction for the Late Age"
 #version 1.0
-#icon "Dwarves/banner.tga"
+#icon "Dun/banner.tga"
 
 -- War Hammer
 #newweapon 801
@@ -208,8 +208,8 @@
 #name "Redbeard Chief"
 #nametype 171
 #descr "The chiefs are the leaders of the various redbeard tribes, and are known to lead its' members in smaller skirmishes. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dwarves/Redbeard_Chief_0.tga"
-#spr2 "Dwarves/Redbeard_Chief_1.tga"
+#spr1 "Dun/Redbeard_Chief_0.tga"
+#spr2 "Dun/Redbeard_Chief_1.tga"
 #drawsize 40
 #hp 12
 #str 12
@@ -243,8 +243,8 @@
 #copystats 3501
 #name "Redbeard Brawler"
 #descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dwarves/Redbeard_Brawler_0.tga"
-#spr2 "Dwarves/Redbeard_Brawler_1.tga"
+#spr1 "Dun/Redbeard_Brawler_0.tga"
+#spr2 "Dun/Redbeard_Brawler_1.tga"
 #drawsize 15
 #clearweapons
 #cleararmor
@@ -272,8 +272,8 @@
 #name "Redbeard Shaman"
 #descr "The shaman are the spiritual leaders of the clans. The chiefs consult them regularly as to not anger the spirits and the earth. Shaman are capable earth mages and fierce fighters. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #drawsize 15
-#spr1 "Dwarves/Redbeard_Shaman_0.tga"
-#spr2 "Dwarves/Redbeard_Shaman_1.tga"
+#spr1 "Dun/Redbeard_Shaman_0.tga"
+#spr2 "Dun/Redbeard_Shaman_1.tga"
 
 #clearweapons
 #cleararmor
@@ -298,8 +298,8 @@
 #copystats 3501
 #name "Redbeard Warrior"
 #descr "The warriors of the clans are fierce, but unruly. They wield hammers and light armor and are as such quick by dwarf standards. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dwarves/Redbeard_Berserker_0.tga"
-#spr2 "Dwarves/Redbeard_Berserker_1.tga"
+#spr1 "Dun/Redbeard_Berserker_0.tga"
+#spr2 "Dun/Redbeard_Berserker_1.tga"
 #drawsize 15
 #clearweapons
 #cleararmor
@@ -322,8 +322,8 @@
 #copystats 3501
 #name "Redbeard Warrior"
 #descr "The warriors of the clans are fierce, but unruly. They wield hammers and light armor and are as such quick by dwarf standards. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dwarves/Redbeard_Mauler_0.tga"
-#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#spr1 "Dun/Redbeard_Mauler_0.tga"
+#spr2 "Dun/Redbeard_Mauler_1.tga"
 #drawsize 15
 #clearweapons
 #cleararmor
@@ -345,8 +345,8 @@
 #name "Blackbeard Captain"
 #nametype 171
 #descr "The Blackbeard captains serve in menial tasks, such as organizing the guard and leading the rare expedition. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
-#spr1 "Dwarves/Blackbeard_Captain_0.tga"
-#spr2 "Dwarves/Blackbeard_Captain_0.tga"
+#spr1 "Dun/Blackbeard_Captain_0.tga"
+#spr2 "Dun/Blackbeard_Captain_0.tga"
 #drawsize 10
 #hp 11
 #str 12
@@ -383,8 +383,8 @@
 #cleararmor
 #name "Blackbeard Artisan"
 #descr "To be an artisan of blackforge is one of the greatest honors a dwarf can achieve. These though are considered more apprentices than professionals, where they toil according to the directives of the masters, performing many of the more menial tasks of blackforge. Artisans are adept earth mages, provide additional resources, and are able to forge items more expertly than other mages. They are however unwilling to leave their home and will suffer wounds and ultimately perish should they be away for too long."
-#spr1 "Dwarves/Blackbeard_Artisan_0.tga"
-#spr2 "Dwarves/Blackbeard_Artisan_1.tga"
+#spr1 "Dun/Blackbeard_Artisan_0.tga"
+#spr2 "Dun/Blackbeard_Artisan_1.tga"
 #gcost 10030
 #att 6
 #weapon 115
@@ -408,8 +408,8 @@
 #cleararmor
 #name "Blackbeard Lord Commander"
 #descr "Each dedicated a hall, the lords of Blackbeard are vital members for most functions of society. Beyond their role as statesmen they endure a longstanding tradition of the army, harkoning back to the warring period of old. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
-#spr1 "Dwarves/Goatrider_0.tga"
-#spr2 "Dwarves/Goatrider_1.tga"
+#spr1 "Dun/Goatrider_0.tga"
+#spr2 "Dun/Goatrider_1.tga"
 #rcost 1
 #gcost 10020
 #rpcost 2
@@ -435,8 +435,8 @@
 #cleararmor
 #name "Blackbeard Master Artisan"
 #descr "To be an artisan of blackforge is one of the greatest honors a dwarf can achieve. To become a master artisan a dwarf must first toil in apprenticeship for a century. Artisans are adept earth mages, provide additional resources, and are able to forge items more expertly than other mages. They are however unwilling to leave their home and will suffer wounds and ultimately perish should they be away for too long."
-#spr1 "Dwarves/Redbeard_Mauler_0.tga"
-#spr2 "Dwarves/Redbeard_Mauler_1.tga"
+#spr1 "Dun/Redbeard_Mauler_0.tga"
+#spr2 "Dun/Redbeard_Mauler_1.tga"
 #gcost 10040
 #holy
 
@@ -462,8 +462,8 @@
 #cleararmor
 #name "Blackbeard Infantry"
 #descr "The infantry of the Blackbeards are staunch protectors of the front line. They wield a large shield and a weighty hammer. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
-#spr1 "Dwarves/Blackbeard_Infantry_0.tga"
-#spr2 "Dwarves/Blackbeard_Infantry_1.tga"
+#spr1 "Dun/Blackbeard_Infantry_0.tga"
+#spr2 "Dun/Blackbeard_Infantry_1.tga"
 #rcost 1
 #gcost 10010
 #rpcost 10010
@@ -484,8 +484,8 @@
 #cleararmor
 #name "Blackbeard Arbalest"
 #descr "The arbalests of the Blackbeards are able to launch dense volleys upon the enemy. They wield a large shield and a weighty hammer. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
-#spr1 "Dwarves/Blackbeard_Arbalest_0.tga"
-#spr2 "Dwarves/Blackbeard_Arbalest_1.tga"
+#spr1 "Dun/Blackbeard_Arbalest_0.tga"
+#spr2 "Dun/Blackbeard_Arbalest_1.tga"
 #rcost 1
 #gcost 10010
 --#gcost 10
@@ -505,8 +505,8 @@
 #newmonster 3517
 #name "Blackbeard Ballista"
 #descr "This instrument of destruction have since long guarded the gates of Blackforge. Its mechanism launches tremendously large and powerful bolts that is capable of injuring if not outright killing small groups of enemies, or make serious harm to enemy fortifications. Its weight though leaves it immobile on the battlefield and has previously made it impossible to move. Recent advancements by the artisans have made it possible to at least travel with it for lengthy campaigns."
-#spr1 "Dwarves/Ballista_0.tga"
-#spr2 "Dwarves/Ballista_1.tga"
+#spr1 "Dun/Ballista_0.tga"
+#spr2 "Dun/Ballista_1.tga"
 #drawsize 10
 #hp 16
 #str 12
@@ -547,8 +547,8 @@
 #newmonster 3518
 #name "Blackbeard Ballista"
 #descr "This instrument of destruction have since long guarded the gates of Blackforge. Its mechanism launches tremendously large and powerful bolts that is capable of injuring if not outright killing small groups of enemies, or make serious harm to enemy fortifications. Its weight though leaves it immobile on the battlefield and has previously made it impossible to move. Recent advancements by the artisans have made it possible to at least travel with it for lengthy campaigns."
-#spr1 "Dwarves/Ballista_empty_0.tga"
-#spr2 "Dwarves/Ballista_empty_1.tga"
+#spr1 "Dun/Ballista_empty_0.tga"
+#spr2 "Dun/Ballista_empty_1.tga"
 #drawsize 10
 #hp 30
 #str 12
@@ -585,8 +585,8 @@
 #name "Whitebeard Sage"
 #nametype 171
 #descr "The sages of the whitebeard clan serve an instrumental role within the empire. They are the recordkeepers of every invention, dispute, altercation, and event and their records span for close to a millennia. The whitebeard sage make for excellent researchers, and are adept earth mages - some also proficient in water and air magic. Whitebeards only reside in the peaks of highlands and mountains, and can only be recruited from there."
-#spr1 "Dwarves/Whitebeard_Sage_0.tga"
-#spr2 "Dwarves/Whitebeard_Sage_1.tga"
+#spr1 "Dun/Whitebeard_Sage_0.tga"
+#spr2 "Dun/Whitebeard_Sage_1.tga"
 #hp 10
 #str 10
 #att 7
@@ -624,8 +624,8 @@
 #clearmagic
 #name "Whitebeard Kinsman"
 #descr "A light, mobile infantry by dwarf standards. They wield only a hammer, and generally serve as bodyguards for the sages, who need plenty of protection as the truth of the records hold not only moments of wisdom and virtue, but also moments of vice and wrath. Whitebeards only reside in the peaks of highlands and mountains, and can only be recruited from there."
-#spr1 "Dwarves/Whitebeard_Kinsman_0.tga"
-#spr2 "Dwarves/Whitebeard_Kinsman_1.tga"
+#spr1 "Dun/Whitebeard_Kinsman_0.tga"
+#spr2 "Dun/Whitebeard_Kinsman_1.tga"
 #rcost 1
 #gcost 10008
 --#gcost 8
@@ -647,8 +647,8 @@
 #descr "Harkoning to ancient times the stone-kin of Dûn have come to serve a sacred role in the federation. It's members are dwarves who have waived all ties to their clan, and through a sacred ritual where they shave all hair they are blessed with skin akin to marble and gemstone eyes. Those with eyes of ruby serve as leaders and are set to learn the incantations, while those with amber execute the order's will.
 In the later age, the stone-kin have dwindled in number due in large to the change in values of the dwarf clans. In order to keep relevant, they don the finest armor produced in Blackforge, serving as the ultimate show of dwarven craftsmanship.
 Stone-kin have strong natural protection and possess magical sight, but they are weak to cold. The paladin wield a mighty hammer capable of turning those it strikes into stone."
-#spr1 "Dwarves/Paladin_0.tga"
-#spr2 "Dwarves/Paladin_1.tga"
+#spr1 "Dun/Paladin_0.tga"
+#spr2 "Dun/Paladin_1.tga"
 #hp 11
 #str 10
 #att 9
@@ -681,8 +681,8 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #name "Smith Elder"
 #nametype 171
 #descr "Revered since the days of old, the smith elders of dwarfkind still hold an exalted status within the empire. Solitary and devoted to their craft, they are supreme experts in forging items. They are however unwilling to leave their home and will suffer wounds and ultimately perish should they be away for too long."
-#spr1 "Dwarves/Smith_Elder_0.tga"
-#spr2 "Dwarves/Smith_Elder_1.tga"
+#spr1 "Dun/Smith_Elder_0.tga"
+#spr2 "Dun/Smith_Elder_1.tga"
 #hp 10
 #str 10
 #att 8
@@ -722,8 +722,8 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #name "Magnum Opus"
 #nametype 171
 #descr "The final work of a smith elder, this ancient craft requires the smith to echew his very essence to achieve this feat of creation. The Magnum Opus is a construct that has inherited and amplified the magical powers of its' creator. They are incredibly tough and make for a versatile combatant."
-#spr1 "Dwarves/Magnum_Opus_0.tga"
-#spr2 "Dwarves/Magnum_Opus_1.tga"
+#spr1 "Dun/Magnum_Opus_0.tga"
+#spr2 "Dun/Magnum_Opus_1.tga"
 #hp 34
 #str 18
 #att 10
@@ -786,8 +786,8 @@ Now Teyrgrin has awoken from his dreams, ready to make those dreams come manifes
 
 #newmonster 3535
 #copystats 3532
-#spr1 "Dwarves/EmeraldPaladin_0.tga"
-#spr2 "Dwarves/EmeraldPaladin_1.tga"
+#spr1 "Dun/EmeraldPaladin_0.tga"
+#spr2 "Dun/EmeraldPaladin_1.tga"
 #name "Emerald Paladin"
 #fixedname "Radathur"
 #descr "Endowed with eyes of Emerald, Radathur was gifted power over the verdant realm. Unique in his visage, he honed his worship first with insects native to the mines, then with fauna and larger creatures native to the sun.
@@ -807,8 +807,8 @@ Radathur is an adept mage and priest who is always guarded by nearby insects."
 
 #newmonster 3536
 #copystats 3532
-#spr1 "Dwarves/OnyxPaladin_0.tga"
-#spr2 "Dwarves/OnyxPaladin_1.tga"
+#spr1 "Dun/OnyxPaladin_0.tga"
+#spr2 "Dun/OnyxPaladin_1.tga"
 #name "Onyx Paladin"
 #fixedname "Umbur"
 #descr "Endowed with eyes of Onyx, Umbur was gifted power over the spectral realm. While his left eye remains to allow him to see the mortal plane; his right eye is ever peering into Tartarus, a most maddening fate to endure. Even so, he can evoke its power, and he may assume command of the husks that remain after his mighty blows."
@@ -841,8 +841,8 @@ Radathur is an adept mage and priest who is always guarded by nearby insects."
 
 #newmonster 3538
 #copystats 3532
-#spr1 "Dwarves/WarPriest_0.tga"
-#spr2 "Dwarves/WarPriest_1.tga"
+#spr1 "Dun/WarPriest_0.tga"
+#spr2 "Dun/WarPriest_1.tga"
 #name "Ruby Paladin"
 #descr "Harkoning to ancient times the stone-kin of Dûn have come to serve a sacred role in the federation. It's members are dwarves who have waived all ties to their clan, and through a sacred ritual where they shave all hair they are blessed with skin akin to marble and gemstone eyes. Those with eyes of ruby serve as leaders and are set to learn the incantations, while those with amber execute the order's will.
 In the later age, the stone-kin have dwindled in number due in large to the change in values of the dwarf clans. In order to keep relevant, they don the finest armor produced in Blackforge, serving as the ultimate show of dwarven craftsmanship.
@@ -1398,7 +1398,7 @@ Magic: Earth, air, water, fire. Homesick sacred master smiths
 Priests: Weak, but heavily armored, though only recruitable in the capital"
 #color 0.47 0.36 0.63
 #secondarycolor 0.49 0.26 0.33
-#flag "Dwarves/flag2.tga"
+#flag "Dun/flag2.tga"
 
 #startsite "Blackforge"
 #startsite "Records of Dwarfkind"
