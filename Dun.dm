@@ -719,9 +719,9 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #end
 
 #newmonster 3533
-#name "Magnum Opus"
+#name "Amsum-anat"
 #nametype 171
-#descr "The final work of a smith elder, this ancient craft requires the smith to echew his very essence to achieve this feat of creation. The Magnum Opus is a construct that has inherited and amplified the magical powers of its' creator. They are incredibly tough and make for a versatile combatant."
+#descr "The final work of a smith elder, this ancient craft requires the smith to echew his very essence to achieve this feat of creation. The Amsum-anat is a construct that has inherited and amplified the magical powers of its' creator. They are incredibly tough and make for a versatile combatant."
 #spr1 "Dun/Magnum_Opus_0.tga"
 #spr2 "Dun/Magnum_Opus_1.tga"
 #hp 34
@@ -880,10 +880,10 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #end
 
 #newspell
-#name "Magnum Opus"
+#name "Akhbub amsum-anat"
 #descr "When a smith elder has reached the crest of mastery there is but one recourse. The smith must forge their final creation. It will embody every aspect of the creator's character, it will be imbued with every power, and mirror every chink. The resulting construct will bear the name of its' creator, as the smith will now retire to spend the rest of his days in peace."
 #school 3
-#researchlevel 8
+#researchlevel 7
 #restricted -1
 #onlymnr 3531
 #polygetmagic 0
