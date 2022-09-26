@@ -395,6 +395,7 @@
 
 #magicskill 3 1
 #custommagic 1536 100
+#custommagic 1920 10
 #mastersmith 1
 #resources 5
 #homesick 10
