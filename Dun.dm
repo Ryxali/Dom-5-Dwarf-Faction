@@ -802,7 +802,7 @@ startmajoraff 5
 #newmonster 3561
 #name "Prospector"
 #nametype 171
-#descr "Scout that can get magic paths"
+#descr "Scout that can get magic paths. Sometimes organizes a party of seven"
 #spr1 "Dun/Redbeard_Chief_0.tga"
 #spr2 "Dun/Redbeard_Chief_1.tga"
 #drawsize 10
@@ -828,6 +828,7 @@ startmajoraff 5
 #stealthy 0
 #noreqlab
 #command -34
+#startitem 500
 
 #weapon 267
 #weapon 25
@@ -877,11 +878,11 @@ startmajoraff 5
 
 #newmonster 3563
 #copystats 3511
-#name "Rider Captain"
+#name "Mountaineer Captain"
 #nametype 171
 #clearweapons
 #cleararmor
-#descr "Each dedicated a hall, the lords of Blackbeard are vital members for most functions of society. Beyond their role as statesmen they endure a longstanding tradition of the army, harkoning back to the warring period of old. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
+#descr "Rides a goat."
 #spr1 "Dun/Goatrider_0.tga"
 #spr2 "Dun/Goatrider_1.tga"
 #rcost 1
@@ -914,7 +915,7 @@ startmajoraff 5
 #nametype 171
 #clearweapons
 #cleararmor
-#descr "Each dedicated a hall, the lords of Blackbeard are vital members for most functions of society. Beyond their role as statesmen they endure a longstanding tradition of the army, harkoning back to the warring period of old. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
+#descr "Each dedicated a hall, the lords are vital members for most functions of society. Beyond their role as statesmen they endure a longstanding tradition of the army. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
 #spr1 "Dun/Goatrider_0.tga"
 #spr2 "Dun/Goatrider_1.tga"
 #rcost 1
@@ -941,7 +942,7 @@ startmajoraff 5
 #newmonster 3565
 #name "Alchemist"
 #nametype 171
-#descr "Scout that can get magic paths"
+#descr "Offshoot magic paths. Otherwise converts gems to gold."
 #spr1 "Dun/Whitebeard_Sage_0.tga"
 #spr2 "Dun/Whitebeard_Sage_1.tga"
 #drawsize 10
@@ -975,7 +976,7 @@ startmajoraff 5
 #newmonster 3566
 #name "Sculptor"
 #nametype 171
-#descr "Scout that can get magic paths"
+#descr "Harkons to the shapers of the early age. Able to cast either Claymen or Terracotta army, occassionaly also Clayshape."
 #spr1 "Dun/Whitebeard_Kinsman_0.tga"
 #spr2 "Dun/Whitebeard_Kinsman_1.tga"
 #drawsize 10
@@ -1001,6 +1002,7 @@ startmajoraff 5
 #custommagic 1024 10
 #holy
 #poorleader
+#okmagicleader
 
 #weapon 13
 #armor 5
@@ -1013,7 +1015,7 @@ startmajoraff 5
 #newmonster 3567
 #name "Smith"
 #nametype 171
-#descr "Scout that can get magic paths"
+#descr "Sacred. Forges wondrous items & capable on the battelfield."
 #spr1 "Dun/Blackbeard_Artisan_0.tga"
 #spr2 "Dun/Blackbeard_Artisan_1.tga"
 #drawsize 10
@@ -1086,9 +1088,9 @@ startmajoraff 5
 #end
 
 #newmonster 3569
-#name "Surveyor"
+#name "Spelunker"
 #nametype 171
-#descr "Stealthy"
+#descr "Many who aspire to explore the Unknown Deep first start out as scrubs. Stealthy and often travel in parties of seven strong."
 #spr1 "Dun/Redbeard_Berserker_0.tga"
 #spr2 "Dun/Redbeard_Berserker_1.tga"
 #drawsize 10
@@ -1226,7 +1228,7 @@ startmajoraff 5
 #newmonster 3573
 #name "Hammer"
 #nametype 171
-#descr "Scout that can get magic paths"
+#descr "Hammer & Anvil. The hammer deals the heavy blows"
 #spr1 "Dun/WarPriest_0.tga"
 #spr2 "Dun/WarPriest_1.tga"
 #drawsize 10
@@ -1259,7 +1261,7 @@ startmajoraff 5
 #newmonster 3574
 #name "Anvil"
 #nametype 171
-#descr "Scout that can get magic paths"
+#descr "Hammer & Anvil. The anvil attempts to pin the foe"
 #spr1 "Dun/Redbeard_Mauler_0.tga"
 #spr2 "Dun/Redbeard_Mauler_1.tga"
 #drawsize 10
@@ -1294,7 +1296,7 @@ startmajoraff 5
 #newmonster 3575
 #name "Drummer"
 #nametype 171
-#descr "Scout that can get magic paths"
+#descr "Inspires troops"
 #spr1 "Dun/Whitebeard_Kinsman_0.tga"
 #spr2 "Dun/Whitebeard_Kinsman_1.tga"
 #drawsize 10
@@ -1328,11 +1330,11 @@ startmajoraff 5
 
 #newmonster 3576
 #copystats 3511
-#name "Rider"
+#name "Mountaineer"
 #nametype 171
 #clearweapons
 #cleararmor
-#descr "Each dedicated a hall, the lords of Blackbeard are vital members for most functions of society. Beyond their role as statesmen they endure a longstanding tradition of the army, harkoning back to the warring period of old. All members of the Blackbeard army are clad in dense Puresteel by the specifications of the artisans of Blackforge. There is no compromise in defense and so the dwarves must train to endure the weight. Even so they will find it difficult to fight for extended battles."
+#descr "Cavalry unit"
 #spr1 "Dun/Goatrider_0.tga"
 #spr2 "Dun/Goatrider_1.tga"
 #rcost 1
@@ -1365,7 +1367,7 @@ startmajoraff 5
 #newmonster 3577
 #name "Pavise"
 #nametype 171
-#descr "Scout that can get magic paths"
+#descr "Barrier mostly used for sieges. Mobile enough to transport. Immobile during combat."
 #copyspr 3389
 #hp 18
 #str 15
@@ -1373,7 +1375,7 @@ startmajoraff 5
 #def 0
 #prec 10
 #prot 19
-#size 3
+#size 4
 #mr 10
 #mor 50
 #enc 0
@@ -1382,6 +1384,7 @@ startmajoraff 5
 #eyes 2
 #humanoid
 #maxage 5000
+#age 0
 #immobile
 #inanimate
 #pierceres
@@ -1393,7 +1396,7 @@ startmajoraff 5
 #newmonster 3578
 #name "Puresteel Guard"
 #nametype 171
-#descr "Scout that can get magic paths"
+#descr "Sacred due to fancy armor."
 #spr1 "Dun/OnyxPaladin_0.tga"
 #spr2 "Dun/OnyxPaladin_1.tga"
 #drawsize 10
@@ -2081,9 +2084,9 @@ Radathur is an adept mage and priest who is always guarded by nearby insects."
 
 #newmonster 3537
 #copystats 323
-#copysprite 323
+#copyspr 323
 #name "Dwarven Smith"
-#fixedname "Umbur"
+#fixedname "Dwagin"
 #descr "Slept"
 #clearmagic
 #magicskill 0 1
@@ -2941,6 +2944,18 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 
 #aigoodbless 20
 --#aiheavyrec 80
+#end
+
+#selectitem 500
+#name "Lucky Find"
+#descr "A prospector's lucky find."
+#copyspr 157
+#type 8
+#luck
+#nofind
+#cursed
+#constlevel 12
+#mainpath 4
 #end
 
 -- Events
