@@ -81,10 +81,19 @@
 #end
 
 #newweapon 806
-#name "Trip"
-#len 0
-#att -2
+#name "Billed Axe"
+#len 1
+#att -1
 #def 0
+#dmg 5
+#rcost 3
+#sound 10
+#slash
+#secondaryeffectalways 807
+#end
+
+#newweapon 807
+#name "Trip"
 #dmg 100
 #sound 38
 #dt_realstun
@@ -1281,7 +1290,6 @@ startmajoraff 5
 #humanoid
 #maxage 250
 
-#weapon 13
 #weapon 806
 #armor 21
 #armor 9
@@ -1534,7 +1542,7 @@ startmajoraff 5
 #clearweapons
 #cleararmor
 #rcost 1
-#gcost 10012
+#gcost 10011
 --#gcost 12
 #rpcost 10010
 --#rpcost 16
@@ -1560,7 +1568,7 @@ startmajoraff 5
 #cleararmor
 
 #rcost 1
-#gcost 10012
+#gcost 10011
 #rpcost 10010
 --#gcost 12
 --#rpcost 14
@@ -1872,7 +1880,7 @@ startmajoraff 5
 #rcost 1
 #gcost 10008
 --#gcost 8
-#rpcost 10008
+#rpcost 10000
 #mor 12
 
 #maxage 250
