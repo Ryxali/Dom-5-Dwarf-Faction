@@ -101,6 +101,27 @@
 #flyingimmune
 #end
 
+#newweapon 808
+#name "Holy Water"
+#dmg 4
+#ammo 1
+#range -1
+#flyspr 111 1
+#rcost 1
+#dt_cap
+#armornegating
+#secondaryeffectalways 809
+#skip
+#end
+
+#newweapon 809
+#name "Holy Water Splash"
+#dmg 5
+#aoe 1
+#undeadonly
+#armornegating
+#end
+
 -- ARMOR / ARMS
 
 -- Kilt
@@ -332,7 +353,7 @@ regeneration 10
 #end
 
 #newmonster 3554
-#copystats 1816
+#copystats 1817
 #copyspr 1816
 #name "Relic Guard"
 #clearmagic
@@ -357,8 +378,8 @@ startmajoraff 5
 #newmonster 3555
 #name "Spawn of Pebble"
 #descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dun/Redbeard_Brawler_0.tga"
-#spr2 "Dun/Redbeard_Brawler_1.tga"
+#spr1 "Dun/Pebble_Basic_0.tga"
+#spr2 "Dun/Pebble_Basic_1.tga"
 #drawsize -10
 
 #gcost 10008
@@ -369,7 +390,7 @@ startmajoraff 5
 #att 7
 #def 7
 #prec 10
-#prot 8
+#prot 7
 #size 1
 #mr 10
 #mor 11
@@ -378,6 +399,7 @@ startmajoraff 5
 #ap 10
 #eyes 2
 #rcost 5
+#ressize 2
 #poisonres 7
 #stonebeing
 #coldres -2
@@ -394,8 +416,8 @@ startmajoraff 5
 #newmonster 3556
 #name "Spawn of Pebble"
 #descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dun/Redbeard_Brawler_0.tga"
-#spr2 "Dun/Redbeard_Brawler_1.tga"
+#spr1 "Dun/Pebble_Sling_0.tga"
+#spr2 "Dun/Pebble_Sling_1.tga"
 #drawsize -10
 
 #gcost 10008
@@ -406,7 +428,7 @@ startmajoraff 5
 #att 7
 #def 7
 #prec 10
-#prot 8
+#prot 7
 #size 1
 #mr 10
 #mor 11
@@ -415,6 +437,7 @@ startmajoraff 5
 #ap 10
 #eyes 2
 #rcost 5
+#ressize 2
 #poisonres 7
 #stonebeing
 #coldres -2
@@ -434,19 +457,19 @@ startmajoraff 5
 #newmonster 3557
 #name "Spawn of Basalt"
 #descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dun/Redbeard_Brawler_0.tga"
-#spr2 "Dun/Redbeard_Brawler_1.tga"
+#spr1 "Dun/Basalt_Basic_0.tga"
+#spr2 "Dun/Basalt_Basic_1.tga"
 #drawsize 0
 
 #gcost 10009
 #rpcost 9995
 
-#hp 9
+#hp 8
 #str 9
 #att 9
 #def 8
 #prec 10
-#prot 8
+#prot 7
 #size 1
 #mr 11
 #mor 12
@@ -455,6 +478,7 @@ startmajoraff 5
 #ap 10
 #eyes 2
 #rcost 5
+#ressize 2
 #poisonres 7
 #stonebeing
 #coldres -2
@@ -472,19 +496,19 @@ startmajoraff 5
 #newmonster 3558
 #name "Spawn of Basalt"
 #descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dun/Redbeard_Brawler_0.tga"
-#spr2 "Dun/Redbeard_Brawler_1.tga"
+#spr1 "Dun/Basalt_Shield_0.tga"
+#spr2 "Dun/Basalt_Shield_1.tga"
 #drawsize 0
 
 #gcost 10009
 #rpcost 9995
 
-#hp 9
+#hp 8
 #str 9
 #att 9
 #def 8
 #prec 10
-#prot 8
+#prot 7
 #size 1
 #mr 11
 #mor 11
@@ -493,6 +517,7 @@ startmajoraff 5
 #ap 10
 #eyes 2
 #rcost 5
+#ressize 2
 #poisonres 7
 #stonebeing
 #coldres -2
@@ -508,21 +533,21 @@ startmajoraff 5
 
 -- Maul
 #newmonster 3559
-#name "Spawn of Geode"
+#name "Spawn of Limestone"
 #descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dun/Redbeard_Brawler_0.tga"
-#spr2 "Dun/Redbeard_Brawler_1.tga"
+#spr1 "Dun/Limestone_Maul_0.tga"
+#spr2 "Dun/Limestone_Maul_1.tga"
 #drawsize 10
 
 #gcost 10010
 #rpcost 9997
 
-#hp 11
-#str 10
+#hp 10
+#str 9
 #att 10
 #def 9
 #prec 10
-#prot 8
+#prot 7
 #size 1
 #mr 12
 #mor 12
@@ -531,6 +556,7 @@ startmajoraff 5
 #ap 10
 #eyes 2
 #rcost 5
+#ressize 2
 #poisonres 10
 #stonebeing
 #coldres -2
@@ -546,21 +572,21 @@ startmajoraff 5
 
 -- Shield
 #newmonster 3560
-#name "Spawn of Geode"
+#name "Spawn of Limestone"
 #descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
-#spr1 "Dun/Redbeard_Brawler_0.tga"
-#spr2 "Dun/Redbeard_Brawler_1.tga"
+#spr1 "Dun/Limestone_Mace_0.tga"
+#spr2 "Dun/Limestone_Mace_1.tga"
 #drawsize 10
 
 #gcost 10010
 #rpcost 9997
 
-#hp 11
-#str 10
+#hp 10
+#str 9
 #att 10
 #def 9
 #prec 10
-#prot 8
+#prot 7
 #size 1
 #mr 12
 #mor 12
@@ -569,6 +595,7 @@ startmajoraff 5
 #ap 10
 #eyes 2
 #rcost 5
+#ressize 2
 #poisonres 10
 #stonebeing
 #coldres -2
@@ -579,7 +606,7 @@ startmajoraff 5
 #weapon 12
 #armor 142
 #armor 135
-#armor 4
+#armor 2
 
 #end
 
@@ -781,8 +808,8 @@ startmajoraff 5
 #end
 
 #newmonster 3547
-#copystats 1816
-#copyspr 1816
+#copystats 1817
+#copyspr 1817
 #name "Relic Keeper"
 #clearmagic
 #clearspec
@@ -809,7 +836,7 @@ startmajoraff 5
 -- Prospector (Scout, E 10% EWF 10%), Captain, Knight, Lord Commander, Smith (S) ([EE/FF]), Alchemist ([EF 100%]|[SD 10%]), (Smith Elder)
 -- Miner, Surveyor, Watchman, Guardsman, Shield Bearer, Mauler, Rider, Drummer, Pavise, Puresteel Guard
 #newmonster 3561
-#name "Prospector"
+#name "Delver"
 #nametype 171
 #descr "Scout that can get magic paths. Sometimes organizes a party of seven"
 #spr1 "Dun/Redbeard_Chief_0.tga"
@@ -838,8 +865,10 @@ startmajoraff 5
 #noreqlab
 #command -34
 #startitem 500
+#warning 1
 
 #weapon 267
+#weapon 808
 #weapon 25
 #armor 20
 #armor 5
@@ -1084,14 +1113,14 @@ startmajoraff 5
 #mountainsurvival
 #darkvision 50
 #gold 1
-#addupkeep 8
+#addupkeep 2
 #siegebonus 2
 #weapon 267
 #armor 5
 #armor 20
 
-#gcost 5
-#rpcost 9998
+#gcost 8
+#rpcost 9995
 #ressize 2
 
 #end
@@ -1111,7 +1140,7 @@ startmajoraff 5
 #prot 5
 #size 1
 #mr 11
-#mor 10
+#mor 8
 #enc 4
 #mapmove 10
 #ap 10
@@ -1121,13 +1150,15 @@ startmajoraff 5
 #mountainsurvival
 #darkvision 50
 #stealthy 0
+#bodyguard 2
 
 #weapon 267
+#weapon 808
 #weapon 25
 #armor 20
 #armor 5
 
-#rpcost 9998
+#rpcost 9995
 #gcost 9
 #ressize 2
 
@@ -1161,7 +1192,7 @@ startmajoraff 5
 #armor 20
 #armor 6
 
-#rpcost 9998
+#rpcost 9995
 #gcost 10
 #ressize 2
 
@@ -1195,7 +1226,7 @@ startmajoraff 5
 #armor 11
 #armor 3
 
-#rpcost 9998
+#rpcost 9995
 #gcost 11
 #ressize 2
 
@@ -1228,7 +1259,7 @@ startmajoraff 5
 #armor 20
 #armor 11
 
-#rpcost 9998
+#rpcost 9995
 #gcost 11
 #ressize 2
 
@@ -1261,7 +1292,7 @@ startmajoraff 5
 #armor 21
 #armor 9
 
-#rpcost 10000
+#rpcost 9995
 #gcost 14
 #ressize 2
 
@@ -1295,7 +1326,7 @@ startmajoraff 5
 #armor 9
 #armor 2
 
-#rpcost 10000
+#rpcost 9995
 #gcost 14
 #ressize 2
 
@@ -1330,7 +1361,7 @@ startmajoraff 5
 #armor 20
 #armor 6
 
-#rpcost 10000
+#rpcost 9995
 #gcost 16
 #ressize 2
 
@@ -1365,7 +1396,7 @@ startmajoraff 5
 #armor 9
 #armor 3
 
-#rpcost 10000
+#rpcost 9995
 #gcost 19
 #ressize 2
 
@@ -1392,7 +1423,7 @@ startmajoraff 5
 #eyes 2
 #humanoid
 #maxage 5000
-#age 0
+#startage 0
 #immobile
 #inanimate
 #pierceres
@@ -1430,7 +1461,7 @@ startmajoraff 5
 #armor 302
 #armor 305
 
-#rpcost 10007
+#rpcost 9995
 #gcost 23
 #ressize 2
 
@@ -1976,9 +2007,9 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 
 -- Smith Elder Transformation
 #newmonster 3533
-#name "Amsum-anat"
+#name "Obair mhòr"
 #nametype 171
-#descr "The final work of a smith elder, this ancient craft requires the smith to echew his very essence to achieve this feat of creation. The Amsum-anat is a construct that has inherited and amplified the magical powers of its' creator. They are incredibly tough and make for a versatile combatant."
+#descr "The final work of a smith elder, this ancient craft requires the smith to echew his very essence to achieve this feat of creation. The Obair mhòr is a construct that has inherited and amplified the magical powers of its' creator. They are incredibly tough and make for a versatile combatant."
 #spr1 "Dun/Magnum_Opus_0.tga"
 #spr2 "Dun/Magnum_Opus_1.tga"
 #hp 34
@@ -2123,6 +2154,24 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 
 -- Spells
 
+
+-- Enable Fomorian national spells for EA
+#selectspell 347
+#restricted 121
+#end
+
+#selectspell 350
+#restricted 121
+#end
+
+#selectspell 352
+#restricted 121
+#end
+
+#selectspell 353
+#restricted 121
+#end
+
 -- Special Claymen (Cheaper)
 #newspell
 #copyspell 890
@@ -2157,7 +2206,7 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 
 -- Smith Elder Transformation
 #newspell
-#name "Akhbub amsum-anat"
+#name "Obair mhòr"
 #descr "When a smith elder has reached the crest of mastery there is but one recourse. The smith must forge their final creation. It will embody every aspect of the creator's character, it will be imbued with every power, and mirror every chink. The resulting construct will bear the name of its' creator, as the smith will now retire to spend the rest of his days in peace."
 #school 3
 #researchlevel 7
@@ -2716,7 +2765,7 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #gems 3 1
 #gems 0 1
 #gems 2 1
-#adventureruin 15
+#adventureruin 25
 #path 8
 #end
 
@@ -2762,7 +2811,7 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 
 #hero1 3534
 
-#startcom 3546
+#startcom 3547
 #startunittype1 3558
 #startunitnbrs1 20
 #startunittype2 3557
@@ -2864,7 +2913,7 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #wallunit 3570
 #wallmult 20
 
-#homerealm 1
+#homerealm 2
 #fortera 2
 #templepic 4
 #homefort 4
@@ -2945,7 +2994,7 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #wallunit 3513
 #wallmult 15
 
-#homerealm 1
+#homerealm 2
 #fortera 3
 #templepic 4
 #homefort 19
