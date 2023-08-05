@@ -303,7 +303,7 @@ regeneration 10
 #str 12
 #size 2
 #ap 8
-#prot 8
+#prot 5
 #att 8
 #def 6
 #mr 12
@@ -334,7 +334,7 @@ regeneration 10
 #str 16
 #size 4
 #ap 10
-#prot 9
+#prot 5
 #att 8
 #def 6
 #mr 12
