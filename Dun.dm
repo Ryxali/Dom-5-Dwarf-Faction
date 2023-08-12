@@ -11,13 +11,12 @@
 #len 1
 #sound 10
 #dmg 8
-#att 1
+#att -1
 #def 0
 #rcost 3
 #blunt
 #ironweapon
 #norepel
-#nratt -2
 #end
 
 -- Arbalest
@@ -62,8 +61,8 @@
 #name "Hammer of Dûn"
 #len 1
 #sound 10
-#dmg 8
-#att 1
+#dmg 10
+#att -1
 #def 0
 #rcost 10
 #blunt
@@ -102,7 +101,7 @@
 #end
 
 #newweapon 808
-#name "Holy Water"
+#name "Bottle of Cleansing Water"
 #dmg 4
 #ammo 1
 #range -1
@@ -110,14 +109,17 @@
 #rcost 1
 #dt_cap
 #armornegating
+#magic
 #secondaryeffectalways 809
 #skip
 #end
 
 #newweapon 809
-#name "Holy Water Splash"
+#name "Cleansing Water Splash"
 #dmg 5
 #aoe 1
+#magic
+#explspr 10002
 #undeadonly
 #armornegating
 #end
@@ -131,7 +133,6 @@
 #prot 4
 #def 1
 #enc 0
-#rcost 1
 #end
 
 -- Puresteel Plate Cuirass
@@ -356,6 +357,8 @@ regeneration 10
 #copystats 1817
 #copyspr 1816
 #name "Relic Guard"
+#spr1 "Dun/RelicGuard_0.tga"
+#spr2 "Dun/RelicGuard_1.tga"
 #clearmagic
 #clearspec
 #clearweapons
@@ -369,8 +372,9 @@ regeneration 10
 
 #maxage 200
 #holy
-#startaff 20
-startmajoraff 5
+#startaff 100
+#startmajoraff 5
+#fear 5
 
 #end
 
@@ -616,8 +620,8 @@ startmajoraff 5
 #name "Child of Clay"
 #nametype 171
 #descr "Shaper"
-#spr1 "Dun/Redbeard_Chief_0.tga"
-#spr2 "Dun/Redbeard_Chief_1.tga"
+#spr1 "Dun/Child_Clay_0.tga"
+#spr2 "Dun/Child_Clay_1.tga"
 #drawsize 0
 #hp 9
 #str 10
@@ -662,8 +666,8 @@ startmajoraff 5
 #name "Child of Marble"
 #nametype 171
 #descr "Mage & SC"
-#spr1 "Dun/Redbeard_Chief_0.tga"
-#spr2 "Dun/Redbeard_Chief_1.tga"
+#spr1 "Dun/Child_Marble_0.tga"
+#spr2 "Dun/Child_Marble_1.tga"
 #clearweapons
 #cleararmor
 #clearspec
@@ -692,8 +696,8 @@ startmajoraff 5
 #name "Child of Granite"
 #nametype 171
 #descr "Mage & SC"
-#spr1 "Dun/Redbeard_Chief_0.tga"
-#spr2 "Dun/Redbeard_Chief_1.tga"
+#spr1 "Dun/Child_Granite_0.tga"
+#spr2 "Dun/Child_Granite_1.tga"
 #clearweapons
 #cleararmor
 #clearspec
@@ -723,8 +727,8 @@ startmajoraff 5
 #name "Child of Obsidian"
 #nametype 171
 #descr "Mage & SC"
-#spr1 "Dun/Redbeard_Chief_0.tga"
-#spr2 "Dun/Redbeard_Chief_1.tga"
+#spr1 "Dun/Child_Obsidian_0.tga"
+#spr2 "Dun/Child_Obsidian_1.tga"
 #clearweapons
 #cleararmor
 #clearspec
@@ -751,19 +755,21 @@ startmajoraff 5
 
 
 #newmonster 3545
-#copystats 1816
-#copyspr 1816
+#copystats 1819
 #name "Shaper"
+#spr1 "Dun/Shaper_0.tga"
+#spr2 "Dun/Shaper_1.tga"
 #clearmagic
 #clearspec
 #maxage 200
 #holy
 
 #goodleader
-#okmagicleader
-
-#startaff 20
-startmajoraff 5
+#goodmagicleader
+#gcost 10030
+#startaff 100
+#startmajoraff 5
+#fear 5
 #magicskill 3 1
 #magicskill 4 1
 #custommagic 3968 100
@@ -782,8 +788,9 @@ startmajoraff 5
 
 #newmonster 3546
 #copystats 1816
-#copyspr 1816
 #name "Chronicler"
+#spr1 "Dun/Chronicler_0.tga"
+#spr2 "Dun/Chronicler_1.tga"
 #clearmagic
 #clearspec
 #clearweapons
@@ -795,11 +802,12 @@ startmajoraff 5
 #magicskill 8 3
 #custommagic 6400 200
 #custommagic 6400 10
-
+#gcost 10030
 #maxage 200
 #holy
-#startaff 20
+#startaff 100
 #startmajoraff 5
+#fear 5
 
 #slowrec
 
@@ -809,26 +817,27 @@ startmajoraff 5
 
 #newmonster 3547
 #copystats 1817
-#copyspr 1817
 #name "Relic Keeper"
+#spr1 "Dun/RelicKeeper_0.tga"
+#spr2 "Dun/RelicKeeper_1.tga"
 #clearmagic
 #clearspec
 #clearweapons
 #cleararmor
 
 #expertleader
-
 #weapon 673
 #armor 101
 #armor 135
 #magicskill 8 2
 
 #rpcost 1
-
+#gcost 10030
 #maxage 200
 #holy
-#startaff 20
+#startaff 100
 #startmajoraff 5
+#fear 5
 
 #end
 
@@ -836,13 +845,13 @@ startmajoraff 5
 -- Prospector (Scout, E 10% EWF 10%), Captain, Knight, Lord Commander, Smith (S) ([EE/FF]), Alchemist ([EF 100%]|[SD 10%]), (Smith Elder)
 -- Miner, Surveyor, Watchman, Guardsman, Shield Bearer, Mauler, Rider, Drummer, Pavise, Puresteel Guard
 #newmonster 3561
-#name "Delver"
+#name "Prospector"
 #nametype 171
 #descr "Scout that can get magic paths. Sometimes organizes a party of seven"
 #spr1 "Dun/Redbeard_Chief_0.tga"
 #spr2 "Dun/Redbeard_Chief_1.tga"
 #drawsize 10
-#hp 11
+#hp 10
 #str 9
 #att 8
 #def 8
@@ -863,7 +872,7 @@ startmajoraff 5
 #custommagic 1664 10
 #stealthy 0
 #noreqlab
-#command -34
+#noleader
 #startitem 500
 #warning 1
 
@@ -874,7 +883,7 @@ startmajoraff 5
 #armor 5
 
 #rpcost 1
-#gcost 10005
+#gcost 10015
 #ressize 2
 #end
 
@@ -1012,7 +1021,7 @@ startmajoraff 5
 #end
 
 #newmonster 3566
-#name "Sculptor"
+#name "Stone-kin Sculptor"
 #nametype 171
 #descr "Harkons to the shapers of the early age. Able to cast either Claymen or Terracotta army, occassionaly also Clayshape."
 #spr1 "Dun/Whitebeard_Kinsman_0.tga"
@@ -1023,7 +1032,7 @@ startmajoraff 5
 #att 8
 #def 8
 #prec 10
-#prot 5
+#prot 15
 #size 1
 #mr 14
 #mor 13
@@ -1041,6 +1050,7 @@ startmajoraff 5
 #holy
 #poorleader
 #okmagicleader
+#coldres -5
 
 #weapon 13
 #armor 5
@@ -1128,7 +1138,7 @@ startmajoraff 5
 #newmonster 3569
 #name "Spelunker"
 #nametype 171
-#descr "Many who aspire to explore the Unknown Deep first start out as scrubs. Stealthy and often travel in parties of seven strong."
+#descr "Many who aspire to explore the Unknown Deep first start out as scrubs. Stealthy and often travel in parties of seven strong. Got bottles of blessed water a plenty from Marignon."
 #spr1 "Dun/Redbeard_Berserker_0.tga"
 #spr2 "Dun/Redbeard_Berserker_1.tga"
 #drawsize 10
@@ -1427,6 +1437,7 @@ startmajoraff 5
 #immobile
 #inanimate
 #pierceres
+#poisonres 25
 #rcost 38
 #rpcost 1
 #gcost 20
@@ -1480,7 +1491,7 @@ startmajoraff 5
 #drawsize 40
 #hp 12
 #str 12
-#att 9
+#att 10
 #def 8
 #prec 10
 #prot 3
@@ -1575,7 +1586,7 @@ startmajoraff 5
 #rcost 1
 #gcost 10011
 --#gcost 12
-#rpcost 10010
+#rpcost 10000
 --#rpcost 16
 
 #weapon 801
@@ -1600,7 +1611,7 @@ startmajoraff 5
 
 #rcost 1
 #gcost 10011
-#rpcost 10010
+#rpcost 10000
 --#gcost 12
 --#rpcost 14
 
@@ -1622,8 +1633,8 @@ startmajoraff 5
 #drawsize 10
 #hp 11
 #str 12
-#att 7
-#def 7
+#att 10
+#def 8
 #prec 10
 #prot 3
 #size 1
@@ -1770,7 +1781,7 @@ startmajoraff 5
 --#gcost 10
 #rpcost 10010
 --#rpcost 20
-#att 6
+#att 8
 
 #weapon 802
 #weapon 12
@@ -1868,7 +1879,7 @@ startmajoraff 5
 #descr "The sages of the whitebeard clan serve an instrumental role within the empire. They are the recordkeepers of every invention, dispute, altercation, and event and their records span for close to a millennia. The whitebeard sage make for excellent researchers, and are adept earth mages - some also proficient in water and air magic. Whitebeards only reside in the peaks of highlands and mountains, and can only be recruited from there."
 #spr1 "Dun/Whitebeard_Sage_0.tga"
 #spr2 "Dun/Whitebeard_Sage_1.tga"
-#hp 10
+#hp 8
 #str 10
 #att 7
 #def 7
@@ -1887,7 +1898,7 @@ startmajoraff 5
 #weapon 92
 
 #rpcost 2
-#gcost 10020
+#gcost 9990
 #ressize 2
 #poorleader
 
@@ -1917,6 +1928,7 @@ startmajoraff 5
 #maxage 250
 #weapon 12
 #armor 304
+#att 10
 #ainorec
 #bodyguard 2
 #ressize 2
@@ -1934,16 +1946,16 @@ In the later age, the stone-kin have dwindled in number due in large to the chan
 Stone-kin have strong natural protection and possess magical sight, but they are weak to cold. The paladin wield a mighty hammer capable of turning those it strikes into stone."
 #spr1 "Dun/Paladin_0.tga"
 #spr2 "Dun/Paladin_1.tga"
-#hp 11
-#str 10
-#att 9
-#def 6
+#hp 12
+#str 13
+#att 12
+#def 10
 #prec 10
 #prot 15
 #size 1
 #mr 15
 #mor 14
-#enc 4
+#enc 3
 #mapmove 6
 #ap 10
 #eyes 2
@@ -1958,7 +1970,7 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #armor 310
 
 #rpcost 10020
-#gcost 10018
+#gcost 10020
 #ressize 2
 #end
 
@@ -2147,8 +2159,8 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #mor 15
 #mr 16
 #att 11
-#gcost 10020
-#rpcost 2
+#gcost 10010
+#rpcost 1
 #magicskill 8 1
 #end
 
@@ -2179,7 +2191,7 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #researchlevel 2
 #restricted 121
 #restricted 122
-#restricted 123
+#restricted 120
 #end
 
 #selectspell 890
@@ -2195,7 +2207,7 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #researchlevel 3
 #restricted 121
 #restricted 122
-#restricted 123
+#restricted 120
 #end
 
 #selectspell 898
@@ -2211,7 +2223,7 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #school 3
 #researchlevel 7
 #restricted 122
-#restricted 123
+#restricted 120
 #onlymnr 3531
 #polygetmagic 0
 #path 0 3
@@ -2791,11 +2803,12 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #name "Dûn"
 #epithet "Children of Stone"
 #era 1
-#descr "Stony dwarwes. Natural protection but otherwise primitive. Friends with Earth Elementals"
-#summary "Race: Slow but hardy
-Military: Infantry. powerful crossbows, devastating ballista, heavy armor
-Magic: Earth, air, water, fire. Homesick sacred master smiths
-Priests: Weak, but heavily armored, though only recruitable in the capital"
+#descr "Exiled from the bountiful lands of Fomoria, the children of the Fomorian giants with particularly monstrous features had been cast out to prevent further taint to the bloodline. These people, called the Blemished, sailed to faraway lands in search for a cure for the sins of their forebears. They took the magic of the Nemidians with them, and begun communing with the lands of the dead for an answer. The Archivists long studied, and over time built a vast and deep reliquary where they keep their findings. This reliquary began to contain a wealth of scrolls and artefacts that could be useful for their work, and soon they found that their holding became a sought after prize by the neighboring peoples. Their numbers were few and dwindling, so they learned to create an army from the earth to help defend the gates. Only the Blemished were permitted entrance into the reliquary itself. They are running out of time, their great work must be completed to preserve their kin."
+#summary "Race: Lesser deformed giants, sturdy small stone-kin
+Military: Fomorian mages and sacred warriors that are horrifying to behold, stone-kin infantry and slingers
+Magic: Astral, death, air, earth, and some water and fire
+Priests: Strong, though only recruit-able in the capital"
+#brief "Exiled Fomorians with the help of stone-kin guard the research to end their curse."
 #color 0.47 0.36 0.63
 #secondarycolor 0.49 0.26 0.33
 #flag "Dun/flag2.tga"
@@ -2803,13 +2816,21 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #startsite "The Reliquary"
 #startsite "Halls of Shaping"
 
-
 #addgod 2502
 #addgod 216
 #addgod 265
 #addgod 606
+#addgod 3346
+#addgod 2449
+#addgod 2234
+#addgod 550
+#addgod 3024
+#addgod 1898
+#addgod 246
+#addgod 249
+#cheapgod20 1898
 
-#hero1 3534
+-- #hero1 3534
 
 #startcom 3547
 #startunittype1 3558
@@ -2872,12 +2893,22 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #addgod 216
 #addgod 265
 #addgod 606
+#addgod 2802
+#addgod 2206
+#addgod 3346
+#addgod 2449
+#addgod 2234
+#addgod 550
+#addgod 3024
+
+#cheapgod20 2206
+#cheapgod40 2803
 
 #startcom 3562
 #startunittype1 3571
-#startunitnbrs1 20
+#startunitnbrs1 10
 #startunittype2 3570
-#startunitnbrs2 20
+#startunitnbrs2 10
 #startscout 3561
 
 #addrecunit 3568
@@ -2946,6 +2977,16 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #addgod 216
 #addgod 265
 #addgod 606
+#addgod 2802
+#addgod 2206
+#addgod 3346
+#addgod 2449
+#addgod 2234
+#addgod 550
+#addgod 3024
+
+#cheapgod20 2206
+#cheapgod40 2802
 
 #hero1 3534
 #hero2 3535
@@ -3011,6 +3052,7 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #luck
 #nofind
 #cursed
+#command 6
 #constlevel 12
 #mainpath 4
 #end
