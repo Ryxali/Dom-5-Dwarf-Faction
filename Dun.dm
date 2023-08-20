@@ -3471,3 +3471,26 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 #msg "A group of migrating dwarves was seen in the area."
 --#nolog
 #end
+
+-- Prospector upsets a dragon
+#newevent
+#rarity 2
+#req_unique 1
+#req_turn 16
+#req_unluck 0
+#req_fornation 122
+#req_owncapital 1
+#req_targmnr 3561 -- Prospector
+#msg "One of your Prospectors stumbled upon a great hoard within the Unchartered Deep. Unfortunately this awoke a slumbering dragon who has escaped to wreak havoc on the city!"
+#addequip 3
+#cleartarg
+#xp 50
+#gold 1000
+#killpop 100
+#com 2534
+#earthboost 2534
+#earthboost 2534
+#earthboost 2534
+#earthboost 2534
+#addequip 3
+#end
