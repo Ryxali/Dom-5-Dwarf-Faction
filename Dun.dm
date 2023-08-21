@@ -2784,7 +2784,7 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 -- Random, Spawned through map
 #newsite
 #name "Redbeard Clan"
-#rarity 1
+#rarity 5
 #path 7
 #level 0
 #loc 223
@@ -3059,6 +3059,26 @@ Priests: Weak, but heavily armored, though only recruitable in the capital"
 
 -- Events
 
+
+-- Spawn Redbeard Clan site
+#newevent
+#rarity 1
+#req_nation 120
+#req_unique 1
+#req_capital 0
+#req_minpop 500
+#req_land 1
+#req_farm 0
+#req_cave 0
+#req_freesites 1
+#msg "A group of aggressive dwarves have made home in your province! [Redbeard Clan]"
+#addsite -1
+#com 3505
+#2com 3501
+#4com 3504
+#2d6units 3503
+#3d6units 3502
+#end
 
 -- Prepare moot
 #newevent
