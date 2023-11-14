@@ -614,7 +614,57 @@ regeneration 10
 
 #end
 
+#newmonster 3581
+#copystats 1212
+#copyspr 1212
+#name "Normati Javelineer"
+#end
 
+#newmonster 3582
+#copystats 1213
+#copyspr 1213
+#cleararmor
+#clearweapons
+#name "Normati Warrior"
+#weapon 645
+#armor 135
+#end
+
+#newmonster 3583
+#copystats 1214
+#copyspr 1214
+#cleararmor
+#clearweapons
+#name "Normati Noble Warrior"
+#weapon 645
+#armor 135
+#armor 142
+#end
+
+#newmonster 3584
+#copystats 1215
+#copyspr 1215
+#cleararmor
+#clearweapons
+#name "Normati Chieftain"
+#weapon 645
+#armor 135
+#armor 142
+#end
+
+#newmonster 3585
+#copystats 1205
+#copyspr 1205
+#clearspec
+#clearmagic
+#forestsurvival
+#autodishealer 1
+#slowrec
+#magicskill 8 1
+#magicskill 6 1
+#custommagic 12544 100
+#custommagic 12544 100
+#end
 
 #newmonster 3541
 #name "Child of Clay"
@@ -2184,6 +2234,11 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #restricted 121
 #end
 
+-- Also tattoos
+#selectspell 205
+#restricted 121
+#end
+
 -- Special Claymen (Cheaper)
 #newspell
 #copyspell 890
@@ -2844,9 +2899,14 @@ Priests: Strong, though only recruit-able in the capital"
 #addrecunit 3558
 #addrecunit 3559
 #addrecunit 3560
+#forestrec 3581
+#forestrec 3582
+#forestrec 3583
 #addreccom 3542
 #addreccom 3543
 #addreccom 3544
+#forestcom 3584
+#forestcom 3585
 
 #defcom1 3547
 #defcom2 3545
