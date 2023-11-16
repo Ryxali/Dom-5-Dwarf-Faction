@@ -367,8 +367,10 @@ regeneration 10
 
 #weapon 673
 
-#armor 100
+#armor 136
 #armor 135
+
+#gcost 10035
 
 #maxage 200
 #holy
@@ -386,7 +388,7 @@ regeneration 10
 #spr2 "Dun/Pebble_Basic_1.tga"
 #drawsize -10
 
-#gcost 10008
+#gcost 10006
 #rpcost 9992
 
 #hp 8
@@ -403,7 +405,7 @@ regeneration 10
 #ap 10
 #eyes 2
 #rcost 5
-#ressize 2
+#ressize 1
 #poisonres 7
 #stonebeing
 #coldres -2
@@ -424,7 +426,7 @@ regeneration 10
 #spr2 "Dun/Pebble_Sling_1.tga"
 #drawsize -10
 
-#gcost 10008
+#gcost 10006
 #rpcost 9992
 
 #hp 8
@@ -441,7 +443,7 @@ regeneration 10
 #ap 10
 #eyes 2
 #rcost 5
-#ressize 2
+#ressize 1
 #poisonres 7
 #stonebeing
 #coldres -2
@@ -466,7 +468,7 @@ regeneration 10
 #drawsize 0
 
 #gcost 10009
-#rpcost 9995
+#rpcost 9993
 
 #hp 8
 #str 9
@@ -482,7 +484,7 @@ regeneration 10
 #ap 10
 #eyes 2
 #rcost 5
-#ressize 2
+#ressize 1
 #poisonres 7
 #stonebeing
 #coldres -2
@@ -492,7 +494,7 @@ regeneration 10
 
 #weapon 12
 #weapon 605
-#armor 142
+#armor 100
 
 #end
 
@@ -505,7 +507,7 @@ regeneration 10
 #drawsize 0
 
 #gcost 10009
-#rpcost 9995
+#rpcost 9993
 
 #hp 8
 #str 9
@@ -521,7 +523,7 @@ regeneration 10
 #ap 10
 #eyes 2
 #rcost 5
-#ressize 2
+#ressize 1
 #poisonres 7
 #stonebeing
 #coldres -2
@@ -530,7 +532,7 @@ regeneration 10
 #maxage 250
 
 #weapon 12
-#armor 142
+#armor 100
 #armor 2
 
 #end
@@ -544,7 +546,7 @@ regeneration 10
 #drawsize 10
 
 #gcost 10010
-#rpcost 9997
+#rpcost 9996
 
 #hp 10
 #str 9
@@ -560,7 +562,7 @@ regeneration 10
 #ap 10
 #eyes 2
 #rcost 5
-#ressize 2
+#ressize 1
 #poisonres 10
 #stonebeing
 #coldres -2
@@ -569,7 +571,7 @@ regeneration 10
 #maxage 250
 
 #weapon 14
-#armor 142
+#armor 100
 #armor 135
 
 #end
@@ -577,13 +579,13 @@ regeneration 10
 -- Shield
 #newmonster 3560
 #name "Spawn of Limestone"
-#descr "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
+#desc "The brawlers are honored among the redbeards for ascending through the fighting pits - an ancient tradition amongst the clans. The brawlers are experts at fighting unarmored and unarmed, and make for expert dueling champions. The lust for fighting never leaves a brawler and as such it's impossible to stop them from entering competitions. All redbeards are ferocious in battle and will go berserk at the slightest provocation."
 #spr1 "Dun/Limestone_Mace_0.tga"
 #spr2 "Dun/Limestone_Mace_1.tga"
 #drawsize 10
 
 #gcost 10010
-#rpcost 9997
+#rpcost 9996
 
 #hp 10
 #str 9
@@ -599,7 +601,7 @@ regeneration 10
 #ap 10
 #eyes 2
 #rcost 5
-#ressize 2
+#ressize 1
 #poisonres 10
 #stonebeing
 #coldres -2
@@ -608,7 +610,7 @@ regeneration 10
 #maxage 250
 
 #weapon 12
-#armor 142
+#armor 100
 #armor 135
 #armor 2
 
@@ -618,6 +620,8 @@ regeneration 10
 #copystats 1212
 #copyspr 1212
 #name "Normati Javelineer"
+#descr "The Normati are a splitaway tribe of the Marverni who rejects the dominance of the Gutuaters in loyalty to their Woad Witches. They protect these secluded groves and rarely use expensive armor. They fight bare-chested armed with javelins, swords and shields. Normati warriors decorate themselves in tattoos. The Woad Witches instill the tattoos with wild magic and can awaken the powers of the enchanted tattoos in battle. The Normati tribesmen are known for their bear tattoos."
+#forestsurvival
 #end
 
 #newmonster 3582
@@ -626,8 +630,12 @@ regeneration 10
 #cleararmor
 #clearweapons
 #name "Normati Warrior"
+#descr "The Normati are a splitaway tribe of the Marverni who rejects the dominance of the Gutuaters in loyalty to their Woad Witches. They protect these secluded groves and rarely use expensive armor. They fight bare-chested armed with javelins, swords and shields. Normati warriors decorate themselves in tattoos. The Woad Witches instill the tattoos with wild magic and can awaken the powers of the enchanted tattoos in battle. The Normati tribesmen are known for their bear tattoos."
 #weapon 645
+#weapon 21
 #armor 135
+#armor 2
+#forestsurvival
 #end
 
 #newmonster 3583
@@ -636,9 +644,12 @@ regeneration 10
 #cleararmor
 #clearweapons
 #name "Normati Noble Warrior"
+#descr "The Normati are a splitaway tribe of the Marverni who rejects the dominance of the Gutuaters in loyalty to their Woad Witches. They protect these secluded groves and rarely use expensive armor. They fight bare-chested armed with javelins, swords and shields. Normati warriors decorate themselves in tattoos. The Woad Witches instill the tattoos with wild magic and can awaken the powers of the enchanted tattoos in battle. The Normati tribesmen are known for their bear tattoos."
 #weapon 645
 #armor 135
 #armor 142
+#armor 2
+#forestsurvival
 #end
 
 #newmonster 3584
@@ -647,22 +658,27 @@ regeneration 10
 #cleararmor
 #clearweapons
 #name "Normati Chieftain"
+#descr "The Normati are a splitaway tribe of the Marverni who rejects the dominance of the Gutuaters in loyalty to their Woad Witches. They protect these secluded groves and rarely use expensive armor. They fight bare-chested armed with javelins, swords and shields. Normati warriors decorate themselves in tattoos. The Woad Witches instill the tattoos with wild magic and can awaken the powers of the enchanted tattoos in battle. The Normati tribesmen are known for their bear tattoos."
 #weapon 645
 #armor 135
 #armor 142
+#forestsurvival
 #end
 
 #newmonster 3585
 #copystats 1205
-#copyspr 1205
+#copyspr 154
+#name "Woad Witch"
+#descr "The Woad Witches were originally priestesses of the wild. With the dominance of the Gutuaters the witches were excluded from the druidic circle. In spite the Witches uttered a curse to the sacred forest of Carnutes and tribesmen loyal to their priestesses migrated deep within the forests. A great hunt was called to cull the witches and not many remain. With the arrival of the Blemished they have aligned with them and started to learn their magics. Woad Witches practice the art of etching enchanting young warriors with tattoos and is able to activate its magic in battle."
 #clearspec
 #clearmagic
 #forestsurvival
+#deathcurse
 #autodishealer 1
 #slowrec
-#magicskill 8 1
+#magicskill 5 1
 #magicskill 6 1
-#custommagic 12544 100
+#magicskill 8 1
 #custommagic 12544 100
 #end
 
@@ -694,6 +710,7 @@ regeneration 10
 #stonebeing
 #poisonres 10
 #pierceres
+#poormagicleader
 
 #humanoid
 #maxage 250
@@ -702,7 +719,7 @@ regeneration 10
 
 
 
-#gcost 10030
+#gcost 10017
 #rcost 5
 #rpcost 1
 
@@ -723,7 +740,7 @@ regeneration 10
 #clearspec
 #drawsize 10
 
-#hp 11
+#hp 9
 #stonebeing
 #prot 15
 #mor 11
@@ -732,7 +749,7 @@ regeneration 10
 #custommagic 740 100
 #poisonres 10
 
-#gcost 10010
+#gcost 10007
 #rcost 5
 #rpcost 2
 
@@ -753,7 +770,7 @@ regeneration 10
 #clearspec
 #drawsize 10
 
-#size 2
+#size 1
 #coldres -5
 #okleader
 #magicskill 3 2
@@ -762,7 +779,7 @@ regeneration 10
 #stonebeing
 #poisonres 10
 
-#gcost 10010
+#gcost 10007
 #rcost 5
 #rpcost 2
 
@@ -794,7 +811,7 @@ regeneration 10
 #poisonres 10
 #fireres 5
 
-#gcost 10010
+#gcost 10007
 #rcost 3
 #rpcost 2
 
@@ -816,14 +833,14 @@ regeneration 10
 
 #goodleader
 #goodmagicleader
-#gcost 10030
+#gcost 10020
 #startaff 100
 #startmajoraff 5
 #fear 5
+#magicskill 2 1
 #magicskill 3 1
-#magicskill 4 1
-#custommagic 3968 100
-#custommagic 3968 10
+#custommagic 1668 100
+#custommagic 1668 10
 
 #makemonsters1 3552 1
 
@@ -838,7 +855,7 @@ regeneration 10
 
 #newmonster 3546
 #copystats 1816
-#name "Chronicler"
+#name "Archivist"
 #spr1 "Dun/Chronicler_0.tga"
 #spr2 "Dun/Chronicler_1.tga"
 #clearmagic
@@ -848,11 +865,13 @@ regeneration 10
 
 #okleader
 
-#magicskill 4 3
+#magicskill 1 1
+#magicskill 4 1
+#magicskill 5 1
 #magicskill 8 3
 #custommagic 6400 200
 #custommagic 6400 10
-#gcost 10030
+#gcost 10020
 #maxage 200
 #holy
 #startaff 100
@@ -877,12 +896,12 @@ regeneration 10
 
 #expertleader
 #weapon 673
-#armor 101
+#armor 136
 #armor 135
 #magicskill 8 2
 
 #rpcost 1
-#gcost 10030
+#gcost 10020
 #maxage 200
 #holy
 #startaff 100
@@ -2889,9 +2908,9 @@ Priests: Strong, though only recruit-able in the capital"
 
 #startcom 3547
 #startunittype1 3558
-#startunitnbrs1 20
+#startunitnbrs1 12
 #startunittype2 3557
-#startunitnbrs2 20
+#startunitnbrs2 12
 
 #addrecunit 3555
 #addrecunit 3556
@@ -2921,7 +2940,7 @@ Priests: Strong, though only recruit-able in the capital"
 #homerealm 2
 #fortera 1
 #templepic 4
-#homefort 4
+#homefort 18
 
 #aigoodbless 20
 
