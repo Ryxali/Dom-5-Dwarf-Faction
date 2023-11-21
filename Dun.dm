@@ -2233,6 +2233,30 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #magicskill 8 1
 #end
 
+#newmonster 3539
+#copystats 1792
+#copyspr 1792
+#name "Nemedian Sorceress"
+#fixedname "Morgana"
+#descr "Took pity & fled with the Blemished"
+#clearmagic
+#magicskill 1 4
+#magicskill 2 1
+#magicskill 5 2
+#end
+
+#newmonster 3540
+#copy 3585
+#copyspr 3585
+#name "Head of the Coven"
+#fixedname "Beatrix"
+#clearmagic
+#magicskill 5 3
+#magicskill 6 3
+#magicskill 8 2
+#deathparalyze 10
+#end
+
 -- Spells
 
 
@@ -2878,10 +2902,10 @@ Stone-kin have strong natural protection and possess magical sight, but they are
 #epithet "Children of Stone"
 #era 1
 #descr "Exiled from the bountiful lands of Fomoria, the children of the Fomorian giants with particularly monstrous features had been cast out to prevent further taint to the bloodline. These people, called the Blemished, sailed to faraway lands in search for a cure for the sins of their forebears. They took the magic of the Nemidians with them, and begun communing with the lands of the dead for an answer. The Archivists long studied, and over time built a vast and deep reliquary where they keep their findings. This reliquary began to contain a wealth of scrolls and artefacts that could be useful for their work, and soon they found that their holding became a sought after prize by the neighboring peoples. Their numbers were few and dwindling, so they learned to create an army from the earth to help defend the gates. Only the Blemished were permitted entrance into the reliquary itself. They are running out of time, their great work must be completed to preserve their kin."
-#summary "Race: Lesser deformed giants, sturdy small stone-kin
+#summary "Race: Lesser deformed giants, sturdy small stone-kin, Normati tribesmen and Woad Witches in forests
 Military: Fomorian mages and sacred warriors that are horrifying to behold, stone-kin infantry and slingers
 Magic: Astral, death, air, earth, and some water and fire
-Priests: Strong, though only recruit-able in the capital"
+Priests: Strong, though only recruit-able in the capital, "
 #brief "Exiled Fomorians with the help of stone-kin guard the research to end their curse."
 #color 0.47 0.36 0.63
 #secondarycolor 0.49 0.26 0.33
@@ -2890,6 +2914,9 @@ Priests: Strong, though only recruit-able in the capital"
 #startsite "The Reliquary"
 #startsite "Halls of Shaping"
 
+#killcappop 30
+#hatesterr 128
+#likesterr 16
 #addgod 2502
 #addgod 216
 #addgod 265
@@ -2904,7 +2931,8 @@ Priests: Strong, though only recruit-able in the capital"
 #addgod 249
 #cheapgod20 1898
 
--- #hero1 3534
+#hero1 3539
+#hero1 3540
 
 #startcom 3547
 #startunittype1 3558
